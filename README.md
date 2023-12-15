@@ -26,7 +26,6 @@ sudo ./setup.sh
 - [x] Todo tree view
 - [x] Git integration
 - [x] Simple markdown renderer (in-browser)
-- [] Auto import function (LSP plugin)
 - [] Code formatter
 - [] Find string match and create a cursor for every match, one at a time (additional multi-cursor editing)
 - [] View downloaded dependencies/modules (es. Eclipse J.E. jar libraries, node modules)
@@ -35,8 +34,7 @@ sudo ./setup.sh
 - [] Paste converting from JSON to Typescript
 - [] Move-to-line-n command
 - [] Simultaneous tag rename for html, xml, tex
-- [] Code definition preview upon hovering
-- [] Commit tree visualizer (like Gitkraken and Github Desktop)
+- [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
 - [] Project-wide refactoring
 - [] Multi-threaded find/replace/rename
 - [] Builder integration
@@ -47,10 +45,9 @@ sudo ./setup.sh
   - [] maven
 - [] Debugger integration
   - [x] gdb
-  - [] ...
-- [] Decompiler integration
-  - [] java
-- [] File tree view (shows components of a file, es. Eclipse JE right side panel)
+- [] Decompiler integration for Java
+  - [] cfr
+  - [] procyon
 - [] Project template manager (generates basic project folders based on templates)
 - [] Tmux integration
 
@@ -105,21 +102,3 @@ sudo ./setup.sh
   - [x] lsp server
   - [] linting
   - [] snippets
-
-## Candidates
-- https://github.com/jgmdev/lite-xl-threads
-- https://github.com/vincens2005/lite-formatters
-
-## Credits
-- https://github.com/lite-xl/lite-xl-colors
-- https://github.com/lite-xl/lite-xl-plugins
-- https://github.com/lite-xl/lite-xl-lsp
-- https://github.com/lite-xl/lite-xl-scm
-- https://github.com/adamharrison/lite-xl-ide
-- https://github.com/liquidev/lintplus
-- https://github.com/drmargarido/linters
-- https://github.com/vqns/lite-xl-snippets
-- https://github.com/adamharrison/lite-xl-terminal
-- https://github.com/drmargarido/TodoTreeView
-
-And many more...
