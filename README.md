@@ -1,7 +1,7 @@
 # Lite XL IDE setup
 
 ## Introduction
-A set of plugins and configuration files that aims to give `Lite XL` the capabilities of VSCode.
+A set of plugins and configuration files that aims to turn `Lite XL` into a proper IDE.
 
 WARNING: it's a work in progress.
 
@@ -39,8 +39,6 @@ sudo ./setup.sh
 - [] Multi-threaded find/replace/rename
 - [] Builder integration
   - [x] make
-  - [] meson
-  - [] scons
   - [] gradle
   - [] maven
 - [] Debugger integration
@@ -48,8 +46,7 @@ sudo ./setup.sh
 - [] Decompiler integration for Java
   - [] cfr
   - [] procyon
-- [] Project template manager (generates basic project folders based on templates)
-- [] Tmux integration
+- [] Project template manager
 
 ## Language support progress
 - Lua
