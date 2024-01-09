@@ -1,4 +1,3 @@
--- put user settings here
 -- this module will be loaded after everything else when the application starts
 -- it will be automatically reloaded when saved
 
@@ -14,11 +13,15 @@ config.ignore_files = {
   -- files
   "%.pyc$", "%.pyo$", "%.exe$", "%.dll$", "%.obj$", "%.o$", "%.a$", "%.lib$", "%.so$", "%.dylib$", "%.ncb$", "%.sdf$",
   "%.suo$", "%.pdb$", "%.idb$", "%.psd$", "%.db$", "^desktop%.ini$", "^%.DS_Store$", "^%.directory$",
+  -- images
+  "%.png$","%.svg$","%.jpg$","%.jpeg$",
   -- lite xl project file
   "^%.lite_project.lua",
-  --"%.class$", "%.jar$",
+  "%.class$", "%.jar$",
   "^%.SRCINFO$",
   "%.tar$", "%.tar.gz$", "%.tar.pkg.zst$", "%.zip$", "%.gzip$", "%.7z$",
+  -- Some other files
+  "%.gitignore$", "Cargo.lock$"
 }
 
 -- project tree view width
@@ -43,45 +46,18 @@ core.reload_module("colors.onedark")
 -- KEY BINDINGS --
 ------------------
 
--- key binding:
+-- key bindings:
 keymap.add({ ["ctrl+q"] = "core:quit" })
--- pass 'true' for second parameter to overwrite an existing binding
-keymap.add({ ["alt+pageup"] = "root:switch-to-previous-tab" }, true)
-keymap.add({ ["alt+pagedown"] = "root:switch-to-next-tab" }, true)
+keymap.add({ ["alt+pageup"] = "root:switch-to-previous-tab", ["alt+pagedown"] = "root:switch-to-next-tab" }, true)
+--keymap.add({ ["ctrl+alt+pageup"] = "opacity:?", ["ctrl+alt+pagedown"] = "opacity:?" }, true)
 
 
 -----------
 -- FONTS --
 -----------
 
--- customize fonts:
 style.font = renderer.font.load(USERDIR .. "/fonts/SauceCodeProNerdFont-Regular.ttf", 17 * SCALE)
 style.code_font = renderer.font.load(USERDIR .. "/fonts/SauceCodeProNerdFont-Regular.ttf", 18 * SCALE)
-
---
--- DATADIR is the location of the installed Lite XL Lua code, default color
--- schemes and fonts.
--- USERDIR is the location of the Lite XL configuration directory.
---
--- font names used by lite:
--- style.font          : user interface
--- style.big_font      : big text in welcome screen
--- style.icon_font     : icons
--- style.icon_big_font : toolbar icons
--- style.code_font     : code
---
--- the function to load the font accept a 3rd optional argument like:
---
--- {antialiasing="grayscale", hinting="full", bold=true, italic=true, underline=true, smoothing=true, strikethrough=true}
---
--- possible values are:
--- antialiasing: grayscale, subpixel
--- hinting: none, slight, full
--- bold: true, false
--- italic: true, false
--- underline: true, false
--- smoothing: true, false
--- strikethrough: true, false
 
 
 -------------
@@ -89,11 +65,10 @@ style.code_font = renderer.font.load(USERDIR .. "/fonts/SauceCodeProNerdFont-Reg
 -------------
 
 -- disabled plugins
-config.plugins.memoryusage = false
-config.plugins.litepresence = false
 --config.plugins.build = false
 config.plugins.debugger = false
 --config.plugins.ide = false
+--config.plugins.todotreeview = false
 
 -- opacity
 system.set_window_opacity(1.00)
@@ -105,8 +80,9 @@ local lsp = require "plugins.lsp"
 local lspconfig = require "plugins.lsp.config"
 
 -- enable lsp server implementations
-lspconfig.sumneko_lua.setup() -- Lua
-lspconfig.ccls.setup() -- C/C++
+--lspconfig.sumneko_lua.setup() -- Lua
+--lspconfig.ccls.setup() -- C/C++
+--lspconfig.jdtls.setup() -- Java
 lspconfig.pylsp.setup() -- Python
 lspconfig.html.setup() -- HTML
 lspconfig.cssls.setup() -- CSS
@@ -116,12 +92,12 @@ lspconfig.jsonls.setup() -- JSON
 lspconfig.texlab.setup() -- TeX
 lspconfig.bashls.setup() -- Bash
 
--- add lsp server implementations
+-- lsp server implementations
 
 ---# Java
 --- __Status__: Works
 --- __Site__: https://github.com/eclipse/eclipse.jdt.ls
---- __Installation__: `paru -S jdtls`
+--- __Installation__: `paru -S jdtls` or `lpm install lsp_java`
 lsp.add_server {
   name = "jdtls",
   language = "java",
@@ -130,8 +106,8 @@ lsp.add_server {
   verbose = false
 }
 
--- Tailwind CSS
---- __Status__: Untested
+---# Tailwind CSS
+--- __Status__: Broken (freezes when writing classes)
 --- __Site__: https://github.com/tailwindlabs/tailwindcss-intellisense
 --- __Installation__: `sudo pacman -S tailwindcss-language-server`
 lsp.add_server {
@@ -143,6 +119,64 @@ lsp.add_server {
   verbose = false
 }
 
+---# XML
+--- __Status__: Works
+--- __Site__: https://github.com/eclipse/lemminx
+--- __Installation__: 'paru -S lemminx' or `lpm install lsp_xml`
+lsp.add_server {
+  name = "lemminx",
+  language = "xml",
+  file_patterns = { "%.xml$" },
+  command = { "lemminx" },
+  verbose = false
+}
+
+-- ---# Flow - JavaScript
+-- --- __Status__: Untested
+-- --- __Site__: https://flow.org/
+-- --- __Installation__: `npm install -g flow-bin`
+-- lsp.add_server {
+--   name = "flow",
+--   language = "javascript",
+--   file_patterns = { "%.js$", "%.jsx$" },
+--   command = { "flow", "lsp" },
+--   verbose = false
+-- }
+
+-- ---# intelephense - PHP
+-- --- __Status__: Works
+-- --- __Site__: https://github.com/bmewburn/intelephense-docs
+-- --- __Installation__: `npm -g install intelephense`
+-- --- __Note__: Set your license and storage by passing the init_options as follows:
+-- --- ```lua
+-- --- init_options = { licenceKey = "...", storagePath = "/some/path"}
+-- --- ```
+-- lsp.add_server {
+--   name = "intelephense",
+--   language = "php",
+--   file_patterns = { "%.php$" },
+--   command = { "intelephense", "--stdio" },
+--   verbose = false
+-- }
+
+---# PerlNavigator - Perl
+--- __Status__: Untested
+--- __Site__: https://github.com/bscan/PerlNavigator
+--- __Installation__: paru -S perlnavigator
+lsp.add_server {
+  name = "perlnavigator",
+  language = "Perl",
+  file_patterns = { "%.pl$", "%.pm$" },
+  command = { "perlnavigator" },
+  settings = {
+    perlnavigator = {
+      -- The following setting is only needed if you want to set a custom perl path. It already defaults to "perl"
+      perlPath = "perl"
+    }
+  }
+}
+
+
 -- lint+
 local lintplus = require "plugins.lintplus"
 
@@ -150,8 +184,16 @@ lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a fi
 lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
 
 lintplus.load("luacheck") -- Lua
-lintplus.load("shellcheck") -- Bash
+--lintplus.load("") -- C/C++
+-- jdtls already provides it
 lintplus.load("python") -- Python
+--lintplus.load("") -- HTML
+--lintplus.load("") -- CSS
+--lintplus.load("") -- JS/TS
+--lintplus.load("") -- PHP
+lintplus.load("shellcheck") -- Bash
+--lintplus.load("") -- TeX
+-- rust-analyzer already provides it
 
 -- snippets
 local snippets = require "plugins.snippets"
@@ -162,15 +204,10 @@ require "plugins.snippets.lua.c"
 require "plugins.snippets.lua.cpp"
 require "plugins.snippets.lua.java"
 require "plugins.snippets.lua.python"
+require "plugins.snippets.lua.markdown"
 require "plugins.snippets.lua.html"
 --require "plugins.snippets.lua.css"
 --require "plugins.snippets.lua.js"
---require "plugins.snippets.lua.php"
---require "plugins.snippets.lua.r"
---local lsp_snippets = require 'plugins.lsp_snippets' -- import vscode snippets
---lsp_snippets.add_paths {
---  './plugins/snippets/vscode'
---}
 
 -- lite-xl-terminal
 
@@ -193,32 +230,13 @@ core.add_thread(function() -- Wait until everything is loaded to move the status
   core.status_view:move_item("status:scm", 4, StatusView.Item.LEFT)
 end)
 
--- todotreeview-xl
+-- todotreeviewxl
+config.treeview_size = 750 * SCALE  -- set view width
+--config.todo_mode = "tag"  -- Change display mode (file/tag)
+--config.todo_expanded = false  -- Tells if the plugin should start with the nodes expanded
 
--- set view width
---config.treeview_size = 1000 * SCALE
-
--- Change display mode
---config.todo_mode = "file"
-
--- Tells if the plugin should start with the nodes expanded
---config.todo_expanded = false
-
--- Add extra tags
---table.insert(config.todo_tags, {"CLEANUP"})
-
--- Ignore directory and ignore specific file
---table.insert(config.ignore_paths, {"README.md", ".lite_project.lua"})
-
--- disable todotreeview at startup
---local todotreeview = "config.plugins.todotreeview-xl.TodoTreeView"
---todotreeview = function ()
---  TodoTreeView.super.new(self)
---  self.scrollable = false
---end
-
--- ghmarkdown
--- theme ?
+-- mdpreview
+--keymap.add({ ["ctrl+alt+m"] = "mdpreview:showpreview" }, true)
 
 -----------------------
 -- MY CUSTOM PLUGINS --
@@ -227,5 +245,3 @@ end)
 -- lite-xl-ptm
 -- ?
 
--- filetreeview
--- ?

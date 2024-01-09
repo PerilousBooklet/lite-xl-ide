@@ -36,6 +36,7 @@ lpm install align_carets \
             terminal \
             titleize \
             todotreeview \
+            lsp_c \
             lsp_lua \
             lsp_rust \
             lsp_zig
