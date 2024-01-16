@@ -1,13 +1,14 @@
 #!/usr/bin/bash
 
 # Colors
+lpm install meta_colors
 
 # Fonts
 wget "https://github.com/PerilousBooklet/lite-xl-ide/blob/main/fonts/FiraCodeNerdFont-Regular.ttf" --directory-prefix="~/.config/lite-xl/fonts"
 wget "https://github.com/PerilousBooklet/lite-xl-ide/blob/main/fonts/SauceCodeProNerdFont-Regular.ttf" --directory-prefix="~/.config/lite-xl/fonts"
 
 # Languages
-lpm install "language_*"
+lpm install meta_languages
 
 # Plugins
 lpm install align_carets \
