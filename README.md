@@ -6,7 +6,7 @@ A set of plugins and configuration files that aims to turn `Lite XL` into a prop
 WARNING: it's a work in progress.
 
 ## Installation
-GNU/Linux:
+Arch Linux (requires the `paru` AUR helper):
 ```sh
 git clone https://github.com/PerilousBooklet/lite-xl-ide.git
 cd ./lite-xl-ide
@@ -24,22 +24,20 @@ cd ./lite-xl-ide
 - [x] Single/multi-line commenting with shortcuts
 - [x] Todo tree view
 - [x] Git integration
-- [] Tmux integration
-- [] Docker integration
 - [x] Simple markdown renderer (in-browser)
 - [] Foldable code blocks
-- [] Document symbols tree view (eclipse-like)
+- [] Document symbols treeview
 - [] Code formatter
 - [] Find string match and create a cursor for every match, one at a time (additional multi-cursor editing)
 - [] View downloaded dependencies/modules (es. Eclipse J.E. jar libraries, node modules)
-- [] Java package auto-import (ctrl+shift+o)
 - [] Quick code runner (Es. python notebook)
 - [] Paste converting from JSON to Typescript
 - [] Move-to-line-n command
 - [] Simultaneous tag rename for html, xml, tex <!-- WIP: tex works, html and xml are missing -->
 - [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
-- [] Project-wide refactoring
+- [] Project-wide refactoring (rename files and references: class, method, constructor, ...)
 - [] Multi-threaded find/replace/rename
+- [] Project template manager
 - [] Builder integration
   - [x] make
   - [] gradle
@@ -49,7 +47,8 @@ cd ./lite-xl-ide
 - [] Decompiler integration for Java
   - [] cfr
   - [] procyon
-- [] Project template manager
+- [] Tmux integration
+- [] Docker integration
 
 ## Language support progress
 - Lua
@@ -75,7 +74,7 @@ cd ./lite-xl-ide
 - Python
   - [x] syntax highlighting
   - [x] lsp server
-  - [] linting
+  - [x] linting
   - [] snippets
 - HTML
   - [x] syntax highlighting

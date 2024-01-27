@@ -10,6 +10,10 @@ wget "https://github.com/PerilousBooklet/lite-xl-ide/blob/main/fonts/SauceCodePr
 # Languages
 lpm install meta_languages
 
+# Devicons by PerilousBooklet
+wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/devicons.lua" --directory-prefix="~/.config/lite-xl/plugins"
+wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/fontello-a6929858/font/devicons.ttf" --directory-prefix="~/.config/lite-xl/fonts"
+
 # Plugins
 lpm install align_carets \
             autoinsert \
@@ -23,11 +27,14 @@ lpm install align_carets \
             lintplus \
             lsp \
             lsp_snippets \
+            lsp_c \
+            lsp_lua \
+            lsp_rust \
+            lsp_zig \
             markers \
             minimap \
             opacity \
             rainbowparen \
-            regexreplacepreview \
             scalestatus \
             scm \
             selectionhighlight \
@@ -36,12 +43,16 @@ lpm install align_carets \
             sticky_scroll \
             terminal \
             titleize \
-            todotreeview \
-            lsp_c \
-            lsp_lua \
-            lsp_rust \
-            lsp_zig
+            todotreeview
 
-# Devicons by PerilousBooklet
-wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/devicons.lua" --directory-prefix="~/.config/lite-xl/plugins"
-wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/fontello-a6929858/font/devicons.ttf" --directory-prefix="~/.config/lite-xl/fonts"
+
+# LSP servers
+pacman --noconfirm -S python-lsp-server \
+                      vscode-css-languageserver \
+                      vscode-html-languageserver \
+                      vscode-json-languageserver
+paru -S --noconfirm texlab-bin \
+                    r-languageserver
+
+# Linters
+pacman --noconfirm -S flake8
