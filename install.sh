@@ -3,16 +3,13 @@
 # Colors
 lpm install meta_colors
 
-# Fonts
-wget "https://github.com/PerilousBooklet/lite-xl-ide/blob/main/fonts/FiraCodeNerdFont-Regular.ttf" --directory-prefix="~/.config/lite-xl/fonts"
-wget "https://github.com/PerilousBooklet/lite-xl-ide/blob/main/fonts/SauceCodeProNerdFont-Regular.ttf" --directory-prefix="~/.config/lite-xl/fonts"
-
 # Languages
 lpm install meta_languages
 
 # Devicons by PerilousBooklet
-wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/devicons.lua" --directory-prefix="~/.config/lite-xl/plugins"
-wget "https://github.com/PerilousBooklet/lite-xl-devicons/blob/main/fontello-a6929858/font/devicons.ttf" --directory-prefix="~/.config/lite-xl/fonts"
+# TODO: fix manifest for lite-xl-devicons
+#lpm repo add "https://github.com/PerilousBooklet/lite-xl-devicons"
+#lpm install devicons
 
 # Plugins
 lpm install align_carets \
@@ -22,6 +19,7 @@ lpm install align_carets \
             colorpreview \
             "exec" \
             extend_selection_line \
+            ghmarkdown \
             indentguide \
             lfautoinsert \
             lintplus \
@@ -45,14 +43,99 @@ lpm install align_carets \
             titleize \
             todotreeview
 
-
 # LSP servers
 pacman --noconfirm -S python-lsp-server \
-                      vscode-css-languageserver \
                       vscode-html-languageserver \
+                      vscode-css-languageserver \
+                      deno \
                       vscode-json-languageserver
-paru -S --noconfirm texlab-bin \
-                    r-languageserver
+paru -S --noconfirm jdtls \
+                    texlab-bin \
+                    r-languageserver \
+                    flow-bin \
+                    nodejs-intelephense \
+                    sql-language-server
 
 # Linters
-pacman --noconfirm -S flake8
+pacman --noconfirm -S flake8 \
+                      shellcheck \
+                      texlive-binextra
+
+# Code formatters
+paru --noconfirm -S sql-formatter
+
+# Add configuration options to USERDIR/init.lua
+echo '
+-- lite-xl-lsp
+local lsp = require "plugins.lsp"
+local lspconfig = require "plugins.lsp.config"
+
+-- enable lsp server implementations
+lspconfig.pylsp.setup() -- Python
+lspconfig.html.setup() -- HTML
+lspconfig.cssls.setup() -- CSS
+lspconfig.jsonls.setup() -- JSON
+lspconfig.texlab.setup() -- TeX
+lspconfig.bashls.setup() -- Bash
+--lspconfig.flow.setup() -- JS
+lspconfig.tsserver.setup() -- TS
+lspconfig.intelephense.setup() -- PHP
+lspconfig.sqlls.setup()
+
+-- lsp server implementations
+---# Java
+--- __Status__: Works
+--- __Site__: https://github.com/eclipse/eclipse.jdt.ls
+--- __Installation__: `paru -S jdtls`
+lsp.add_server {
+  name = "jdtls",
+  language = "java",
+  file_patterns = { "%.java$" },
+  command = { "jdtls" },
+  verbose = false
+}
+
+-- lint+
+local lintplus = require "plugins.lintplus"
+lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a file
+lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
+lintplus.load({"luacheck",
+               "shellcheck",
+               "python"})
+-- lsp_c already provides it
+-- jdtls already provides it
+-- rust-analyzer already provides it
+-- rlanguageserver already provides it
+-- vscode-json-languageserver already provides it
+-- intelephense already provides is
+
+-- snippets
+local snippets = require "plugins.snippets"
+require "plugins.snippets.lua.c"
+require "plugins.snippets.lua.cpp"
+require "plugins.snippets.lua.java"
+require "plugins.snippets.lua.python"
+require "plugins.snippets.lua.markdown"
+require "plugins.snippets.lua.html"
+--require "plugins.snippets.lua.css"
+--require "plugins.snippets.lua.js"
+--require "plugins.snippets.lua.ts"
+--require "plugins.snippets.lua.php"
+--require "plugins.snippets.lua.json"
+require "plugins.snippets.lua.lua"
+require "plugins.snippets.lua.bash"
+require "plugins.snippets.lua.tex"
+--require "plugins.snippets.lua.r"
+
+-- lite-xl-scm
+local StatusView = require "core.statusview"
+-- change status view box position
+core.add_thread(function() -- Wait until everything is loaded to move the statusbar item
+  core.status_view:move_item("status:scm", 4, StatusView.Item.LEFT)
+end)
+
+-- todotreeviewxl
+config.treeview_size = 750 * SCALE  -- set view width
+config.todo_mode = "tag"  -- Change display mode (file/tag)
+config.todo_expanded = true  -- Tells if the plugin should start with the nodes expanded
+' >> ~/.config/lite-xl/init.lua

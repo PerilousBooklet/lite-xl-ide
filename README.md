@@ -3,18 +3,19 @@
 ## Introduction
 A set of plugins and configuration files that aims to turn `Lite XL` into a proper IDE.
 
-WARNING: it's a work in progress.
+This project is still WIP.
 
 ## Installation
 Arch Linux (requires the `paru` AUR helper):
 ```sh
 git clone https://github.com/PerilousBooklet/lite-xl-ide.git
 cd ./lite-xl-ide
-./install.sh
+sudo ./install.sh
 ```
 
 ## Features
 - [x] Syntax highlighting for 70+ programming and configuration languages
+- [] LSP/Linting/Snippets support for most programming languages
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -24,7 +25,8 @@ cd ./lite-xl-ide
 - [x] Single/multi-line commenting with shortcuts
 - [x] Todo tree view
 - [x] Git integration
-- [x] Simple markdown renderer (in-browser)
+- [x] Remote markdown renderer (uses Github's API')
+- [] Local markdown renderer (uses the `luamd` library) <!-- TODO: add support for tables and todo-check boxes -->
 - [] Foldable code blocks
 - [] Document symbols treeview
 - [] Code formatter
@@ -36,7 +38,7 @@ cd ./lite-xl-ide
 - [] Simultaneous tag rename for html, xml, tex <!-- WIP: tex works, html and xml are missing -->
 - [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
 - [] Project-wide refactoring (rename files and references: class, method, constructor, ...)
-- [] Multi-threaded find/replace/rename
+- [] Multi-threaded find/replace/refactor
 - [] Project template manager
 - [] Builder integration
   - [x] make
@@ -44,60 +46,22 @@ cd ./lite-xl-ide
   - [] maven
 - [] Debugger integration
   - [x] gdb
-- [] Decompiler integration for Java
-  - [] cfr
-  - [] procyon
 - [] Tmux integration
-- [] Docker integration
 
 ## Language support progress
-- Lua
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [x] linting
-  - [] snippets
-- Bash
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [] linting
-  - [] snippets
-- C/C++
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [x] linting
-  - [] snippets
-- Java
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [x] linting
-  - [] snippets
-- Python
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [x] linting
-  - [] snippets
-- HTML
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [] linting
-  - [] snippets
-- CSS
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [] linting
-  - [] snippets
-- Javascript
-  - [x] syntax highlighting
-  - [] lsp server
-  - [] linting
-  - [] snippets
-- PHP
-  - [x] syntax highlighting
-  - [] lsp server
-  - [] linting
-  - [] snippets
-- TeX
-  - [x] syntax highlighting
-  - [x] lsp server
-  - [] linting
-  - [] snippets
+| Language         | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger|
+|------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|:---------:|
+| C/C++ | v | v | v | wip |  | v | v |
+| Java | v | v | v | wip |  |  |  |
+| Python | v | v | v | wip |  |  |  |
+| HTML | v |  |  |  |  |  |  |
+| CSS | v |  |  |  |  |  |  |
+| JS | v |  |  |  |  |  |  |
+| TS | v |  |  |  |  |  |  |
+| PHP | v | v | v |  |  |  |  |
+| JSON | v | v | v |  |  |  |  |
+| SQL | v | v | v |  |  |  |  |
+| Lua | v | v | v |  |  |  |  |
+| Bash |v | v | v |  |  |  |  |
+| TeX | v | v | v |  |  |  |  |
+
