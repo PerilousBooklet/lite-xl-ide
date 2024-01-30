@@ -52,14 +52,16 @@ pacman --noconfirm -S python-lsp-server \
 paru -S --noconfirm jdtls \
                     texlab-bin \
                     r-languageserver \
-                    flow-bin \
                     nodejs-intelephense \
+                    flow-bin \
                     sql-language-server
 
 # Linters
 pacman --noconfirm -S flake8 \
                       shellcheck \
-                      texlive-binextra
+                      texlive-binextra \
+                      stylelint \
+                      eslint
 
 # Code formatters
 paru --noconfirm -S sql-formatter

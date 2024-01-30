@@ -49,13 +49,13 @@ sudo ./install.sh
 - [] Tmux integration
 
 ## Language support progress
-| Language         | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger|
+| Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger| Formatter |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|:---------:|
-| C/C++ | v | v | v | wip |  | v | v |
-| Java | v | v | v | wip |  |  |  |
-| Python | v | v | v | wip |  |  |  |
-| HTML | v |  |  |  |  |  |  |
-| CSS | v |  |  |  |  |  |  |
+| C/C++ | v | v | v |  | v | v |  |
+| Java | v | v | v |  |  |  |  |
+| Python | v | v | v |  |  |  |  |
+| HTML | v | v |  |  |  |  |  |
+| CSS | v | v |  |  |  |  |  |
 | JS | v |  |  |  |  |  |  |
 | TS | v |  |  |  |  |  |  |
 | PHP | v | v | v |  |  |  |  |
@@ -64,4 +64,23 @@ sudo ./install.sh
 | Lua | v | v | v |  |  |  |  |
 | Bash |v | v | v |  |  |  |  |
 | TeX | v | v | v |  |  |  |  |
+| Arduino | v |  |  |  |  |  |  |
+| C# | v |  |  |  |  |  |  |
+| Crystal | v |  |  |  |  |  |  |
+| Elixir | v |  |  |  |  |  |  |
+| ELM | v |  |  |  |  |  |  |
+| Erlang | v |  |  |  |  |  |  |
+| Go | v |  |  |  |  |  |  |
+| Groovy | v |  |  |  |  |  |  |
+| Haskell | v |  |  |  |  |  |  |
+| Julia | v |  |  |  |  |  |  |
+| Kotlin | v |  |  |  |  |  |  |
+| Lisp | v |  |  |  |  |  |  |
+| Nim | v |  |  |  |  |  |  |
+| Perl | v |  |  |  |  |  |  |
+| Ruby | v |  |  |  |  |  |  |
+| Rust | v |  |  |  |  |  |  |
+| Scala | v |  |  |  |  |  |  |
+| Swift | v |  |  |  |  |  |  |
+| Zig | v |  |  |  |  |  |  |
 
