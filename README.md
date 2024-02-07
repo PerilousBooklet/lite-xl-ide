@@ -25,15 +25,15 @@ sudo ./install.sh
 - [x] Single/multi-line commenting with shortcuts
 - [x] Todo tree view
 - [x] Git integration
-- [x] Remote markdown renderer (uses Github's API')
+- [x] Remote markdown renderer (uses Github's API)
 - [] Local markdown renderer (uses the `luamd` library) <!-- TODO: add support for tables and todo-check boxes -->
-- [] Foldable code blocks
-- [] Document symbols treeview
-- [] Code formatter
+- [] Foldable code blocks <!-- WIP: Adam's working on it' -->
+- [] Document symbols treeview <!-- WIP: Jgmdev's working on it -->
+- [] Code formatters <!-- WIP -->
 - [] Find string match and create a cursor for every match, one at a time (additional multi-cursor editing)
 - [] View downloaded dependencies/modules (es. Eclipse J.E. jar libraries, node modules)
-- [] Quick code runner (Es. python notebook)
-- [] Paste converting from JSON to Typescript
+- [] Quick code runner (Es. python notebook) <!-- WIP -->
+- [] Paste converting from JSON to Typescript <!-- To be done, maybe a fork of `exec`? -->
 - [] Move-to-line-n command
 - [] Simultaneous tag rename for html, xml, tex <!-- WIP: tex works, html and xml are missing -->
 - [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
@@ -51,36 +51,54 @@ sudo ./install.sh
 ## Language support progress
 | Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger| Formatter |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|:---------:|
-| C/C++ | v | v | v |  | v | v |  |
-| Java | v | v | v |  |  |  |  |
-| Python | v | v | v |  |  |  |  |
-| HTML | v | v |  |  |  |  |  |
-| CSS | v | v |  |  |  |  |  |
-| JS | v |  |  |  |  |  |  |
-| TS | v |  |  |  |  |  |  |
-| PHP | v | v | v |  |  |  |  |
-| JSON | v | v | v |  |  |  |  |
-| SQL | v | v | v |  |  |  |  |
-| Lua | v | v | v |  |  |  |  |
+| Arduino |  |  |  |  |  |  |  |
 | Bash |v | v | v |  |  |  |  |
-| TeX | v | v | v |  |  |  |  |
-| Arduino | v |  |  |  |  |  |  |
 | C# | v |  |  |  |  |  |  |
+| C/C++ | v | v | v |  | v | v |  |
 | Crystal | v |  |  |  |  |  |  |
+| CSS | v | v |  |  |  |  |  |
 | Elixir | v |  |  |  |  |  |  |
 | ELM | v |  |  |  |  |  |  |
 | Erlang | v |  |  |  |  |  |  |
 | Go | v |  |  |  |  |  |  |
 | Groovy | v |  |  |  |  |  |  |
 | Haskell | v |  |  |  |  |  |  |
+| HTML | v | v |  |  |  |  |  |
+| Java | v | v | v |  |  |  |  |
+| JS | v |  |  |  |  |  |  |
+| JSON | v | v | v |  |  |  |  |
 | Julia | v |  |  |  |  |  |  |
 | Kotlin | v |  |  |  |  |  |  |
 | Lisp | v |  |  |  |  |  |  |
+| Lua | v | v | v |  |  |  |  |
 | Nim | v |  |  |  |  |  |  |
+| OpenSCAD |  |  |  |  |  |  |  |
 | Perl | v |  |  |  |  |  |  |
+| PHP | v | v | v |  |  |  |  |
+| Python | v | v | v |  |  |  |  |
 | Ruby | v |  |  |  |  |  |  |
 | Rust | v |  |  |  |  |  |  |
 | Scala | v |  |  |  |  |  |  |
+| SQL | v | v | v |  |  |  |  |
 | Swift | v |  |  |  |  |  |  |
+| TeX | v | v | v |  |  |  |  |
+| TS | v |  |  |  |  |  |  |
+| Vala |  |  |  |  |  |  |  |
+| XML | v | v | v |  |  |  |  |
 | Zig | v |  |  |  |  |  |  |
 
+## Credits
+- https://github.com/lite-xl/lite-xl-colors
+- https://github.com/lite-xl/lite-xl-plugins
+- https://github.com/lite-xl/lite-xl-lsp
+- https://github.com/lite-xl/lite-xl-scm
+- https://github.com/adamharrison/lite-xl-ide
+- https://github.com/liquidev/lintplus
+- https://github.com/drmargarido/linters
+- https://github.com/vqns/lite-xl-snippets
+- https://github.com/adamharrison/lite-xl-terminal
+- https://github.com/drmargarido/TodoTreeView
+- https://github.com/jgmdev/lite-xl-threads
+- https://github.com/vincens2005/lite-formatters
+
+And many more...
