@@ -33,8 +33,8 @@ sudo ./install.sh
 - [] Find string match and create a cursor for every match, one at a time (additional multi-cursor editing)
 - [] View downloaded dependencies/modules (es. Eclipse J.E. jar libraries, node modules)
 - [] Quick code runner (Es. python notebook) <!-- WIP -->
-- [] Paste converting from JSON to Typescript <!-- To be done, maybe a fork of `exec`? -->
-- [] Move-to-line-n command
+- [] Paste converting from JSON to Typescript <!-- TODO: maybe a fork of `exec`? -->
+- [x] Go to line n command
 - [] Simultaneous tag rename for html, xml, tex <!-- WIP: tex works, html and xml are missing -->
 - [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
 - [] Project-wide refactoring (rename files and references: class, method, constructor, ...)
@@ -47,6 +47,7 @@ sudo ./install.sh
 - [] Debugger integration
   - [x] gdb
 - [] Tmux integration
+- [] Gradle tasks dedicated side-menu
 
 ## Language support progress
 | Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger| Formatter |
@@ -55,9 +56,9 @@ sudo ./install.sh
 | Bash |v | v | v |  |  |  |  |
 | C# | v |  |  |  |  |  |  |
 | C/C++ | v | v | v |  | v | v |  |
-| Crystal | v |  |  |  |  |  |  |
+| Crystal | v | v |  |  |  |  |  |
 | CSS | v | v |  |  |  |  |  |
-| Elixir | v |  |  |  |  |  |  |
+| Elixir | v | v |  |  |  |  |  |
 | ELM | v |  |  |  |  |  |  |
 | Erlang | v |  |  |  |  |  |  |
 | Go | v |  |  |  |  |  |  |
@@ -72,10 +73,12 @@ sudo ./install.sh
 | Lisp | v |  |  |  |  |  |  |
 | Lua | v | v | v |  |  |  |  |
 | Nim | v |  |  |  |  |  |  |
+| Odin | v | v | v |  |  |  |  |
 | OpenSCAD |  |  |  |  |  |  |  |
-| Perl | v |  |  |  |  |  |  |
+| Perl | v | v |  |  |  |  |  |
 | PHP | v | v | v |  |  |  |  |
 | Python | v | v | v |  |  |  |  |
+| R | v | v | v |  |  |  |  |
 | Ruby | v |  |  |  |  |  |  |
 | Rust | v |  |  |  |  |  |  |
 | Scala | v |  |  |  |  |  |  |

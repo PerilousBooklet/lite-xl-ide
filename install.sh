@@ -37,6 +37,7 @@ lpm install align_carets \
             rainbowparen \
             scalestatus \
             scm \
+            gitblame \
             selectionhighlight \
             snippets \
             sort \
@@ -50,15 +51,18 @@ pacman --noconfirm -S python-lsp-server \
                       vscode-html-languageserver \
                       vscode-css-languageserver \
                       deno \
-                      vscode-json-languageserver
-paru -S --noconfirm jdtls \
+                      vscode-json-languageserver \
+                      arduino-language-server
+paru --noconfirm -S jdtls \
                     texlab-bin \
                     r-languageserver \
                     nodejs-intelephense \
                     flow-bin \
                     sql-language-server \
                     crystalline-bin \
-                    elixir-ls
+                    elixir-ls \
+                    odinls \
+                    openscad-lsp-git
 
 # Linters
 pacman --noconfirm -S flake8 \
