@@ -10,7 +10,7 @@ Arch Linux (requires the `paru` AUR helper):
 ```sh
 git clone https://github.com/PerilousBooklet/lite-xl-ide.git
 cd ./lite-xl-ide
-sudo ./install.sh
+./install.sh
 ```
 
 ## Features
