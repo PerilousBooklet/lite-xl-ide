@@ -46,7 +46,7 @@ lpm install align_carets \
 lpm install lsp_c \
             lsp_lua
 
-pacman --noconfirm -S python-lsp-server \
+sudo pacman --noconfirm -S python-lsp-server \
                       vscode-html-languageserver \
                       vscode-css-languageserver \
                       deno \
@@ -64,7 +64,7 @@ paru --noconfirm -S jdtls \
                     openscad-lsp-git
 
 # Linters
-pacman --noconfirm -S flake8 \
+sudo pacman --noconfirm -S flake8 \
                       shellcheck \
                       texlive-binextra \
                       stylelint \
@@ -145,7 +145,7 @@ lsp.add_server {
 ---# Tailwind CSS
 --- __Status__: Broken (freezes when writing class names inside html doc, requires new C implementation of json.lua)
 --- __Site__: https://github.com/tailwindlabs/tailwindcss-intellisense
---- __Installation__: `sudo pacman -S tailwindcss-language-server`
+--- __Installation__: `sudo sudo pacman -S tailwindcss-language-server`
 lsp.add_server {
   name = "tailwindcss",
   language = "html",
