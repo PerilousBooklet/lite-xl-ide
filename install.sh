@@ -57,6 +57,8 @@ sudo pacman --noconfirm -S python-lsp-server \
                            vscode-json-languageserver \
                            gopls \
                            haskell-language-server\
+                           rust-analyzer
+                           zls \
                            arduino-language-server
 paru --noconfirm -S jdtls \
                     texlab-bin \

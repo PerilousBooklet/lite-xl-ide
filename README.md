@@ -72,6 +72,7 @@ cd ./lite-xl-ide
 | Lisp | v |  |  |  |  |  |  |
 | Lua | v | v | v |  |  |  |  |
 | Nim | v |  |  |  |  |  |  |
+| Ocaml | v |  |  |  |  |  |  |
 | Odin | v | v | v |  |  |  |  |
 | OpenSCAD |  |  |  |  |  |  |  |
 | Perl | v | v |  |  |  |  |  |
@@ -79,7 +80,7 @@ cd ./lite-xl-ide
 | Python | v | v | v |  |  |  |  |
 | R | v | v | v |  |  |  |  |
 | Ruby | v |  |  |  |  |  |  |
-| Rust | v |  |  |  |  |  |  |
+| Rust | v | v |  |  |  |  |  |
 | Scala | v |  |  |  |  |  |  |
 | SQL | v | v | v |  |  |  |  |
 | Swift | v |  |  |  |  |  |  |
@@ -87,7 +88,7 @@ cd ./lite-xl-ide
 | TS | v | v |  |  |  |  |  |
 | Vala |  |  |  |  |  |  |  |
 | XML | v | v | v |  |  |  |  |
-| Zig | v |  |  |  |  |  |  |
+| Zig | v | v |  |  |  |  |  |
 
 ## Credits
 - https://github.com/lite-xl/lite-xl-colors
