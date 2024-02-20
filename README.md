@@ -8,7 +8,7 @@ This project is still WIP.
 ## Installation
 Arch Linux (requires the `paru` AUR helper):
 ```sh
-git clone https://github.com/PerilousBooklet/lite-xl-ide.git
+git clone "https://github.com/PerilousBooklet/lite-xl-ide.git"
 cd ./lite-xl-ide
 ./install.sh
 ```
@@ -26,12 +26,11 @@ cd ./lite-xl-ide
 - [x] Todo tree view
 - [x] Git integration
 - [x] Remote markdown renderer (uses Github's API)
-- [] Local markdown renderer (uses the `luamd` library) <!-- TODO: add support for tables and todo-check boxes -->
-- [] Foldable code blocks <!-- WIP: Adam's working on it' -->
+- [x] Local markdown renderer (uses the `luamd` library) <!-- TODO: add support for tables and todo-check boxes -->
+- [] Foldable code blocks <!-- WIP: Adam's working on it -->
 - [] Document symbols treeview <!-- WIP: Jgmdev's working on it -->
 - [] Code formatters <!-- WIP -->
-- [] Find string match and create a cursor for every match, one at a time (additional multi-cursor editing)
-- [] View downloaded dependencies/modules (es. Eclipse J.E. jar libraries, node modules)
+- [] Support goto-definition/implementation for java decompiled libraries
 - [] Quick code runner (Es. python notebook) <!-- WIP -->
 - [] Paste converting from JSON to Typescript <!-- TODO: maybe a fork of `exec`? -->
 - [x] Go to line n command
@@ -61,15 +60,15 @@ cd ./lite-xl-ide
 | Elixir | v | v |  |  |  |  |  |
 | ELM | v |  |  |  |  |  |  |
 | Erlang | v |  |  |  |  |  |  |
-| Go | v |  |  |  |  |  |  |
+| Go | v | v |  |  |  |  |  |
 | Groovy | v |  |  |  |  |  |  |
-| Haskell | v |  |  |  |  |  |  |
+| Haskell | v | v |  |  |  |  |  |
 | HTML | v | v |  |  |  |  |  |
 | Java | v | v | v |  |  |  |  |
-| JS | v |  |  |  |  |  |  |
+| JS | v | v |  |  |  |  |  |
 | JSON | v | v | v |  |  |  |  |
 | Julia | v |  |  |  |  |  |  |
-| Kotlin | v |  |  |  |  |  |  |
+| Kotlin |  |  |  |  |  |  |  |
 | Lisp | v |  |  |  |  |  |  |
 | Lua | v | v | v |  |  |  |  |
 | Nim | v |  |  |  |  |  |  |
@@ -85,7 +84,7 @@ cd ./lite-xl-ide
 | SQL | v | v | v |  |  |  |  |
 | Swift | v |  |  |  |  |  |  |
 | TeX | v | v | v |  |  |  |  |
-| TS | v |  |  |  |  |  |  |
+| TS | v | v |  |  |  |  |  |
 | Vala |  |  |  |  |  |  |  |
 | XML | v | v | v |  |  |  |  |
 | Zig | v |  |  |  |  |  |  |
