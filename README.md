@@ -13,9 +13,15 @@ cd ./lite-xl-ide
 ./install.sh
 ```
 
+Windows 10/11 (requires the installation of Lite XL and LPM):
+- Download [this](https://github.com/PerilousBooklet/lite-xl-ide.git) zip archive
+- Extract it
+- Run the `install.bat` script
+- Then install the language-specific `lsp_...` plugins of your choice
+
 ## Features
 - [x] Syntax highlighting for 70+ programming and configuration languages
-- [] LSP/Linting/Snippets support for most programming languages
+- [x] LSP/Linting/Snippets support for the most used programming languages
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -23,72 +29,88 @@ cd ./lite-xl-ide
 - [x] Integrated terminal
 - [x] Multi-cursor editing
 - [x] Single/multi-line commenting with shortcuts
+- [x] Go to line n command
 - [x] Todo tree view
 - [x] Git integration
 - [x] Remote markdown renderer (uses Github's API)
 - [x] Local markdown renderer (uses the `luamd` library) <!-- TODO: add support for tables and todo-check boxes -->
+- [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
+- [x] Builder integration
+- [x] Debugger integration
 - [] Foldable code blocks <!-- WIP: Adam's working on it -->
 - [] Document symbols treeview <!-- WIP: Jgmdev's working on it -->
 - [] Code formatters <!-- WIP -->
 - [] Support goto-definition/implementation for java decompiled libraries
 - [] Quick code runner (Es. python notebook) <!-- WIP -->
 - [] Paste converting from JSON to Typescript <!-- TODO: maybe a fork of `exec`? -->
-- [x] Go to line n command
-- [] Simultaneous tag rename for html, xml, tex <!-- WIP: tex works, html and xml are missing -->
-- [] Code definition preview upon hovering (like for TailwindCSS in VSCode)
+- [] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [] Project-wide refactoring (rename files and references: class, method, constructor, ...)
 - [] Multi-threaded find/replace/refactor
 - [] Project template manager
-- [] Builder integration
-  - [x] make
-  - [] gradle
-  - [] maven
-- [] Debugger integration
-  - [x] gdb
 - [] Tmux integration
-- [] Gradle tasks dedicated side-menu
+- [] Gradle tasks dedicated commandview
 
 ## Language support progress
-| Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger| Formatter |
-|------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|:---------:|
-| Arduino |  |  |  |  |  |  |  |
-| Bash |v | v | v |  |  |  |  |
-| C# | v |  |  |  |  |  |  |
-| C/C++ | v | v | v |  | v | v |  |
-| Crystal | v | v |  |  |  |  |  |
-| CSS | v | v |  |  |  |  |  |
-| Elixir | v | v |  |  |  |  |  |
-| ELM | v |  |  |  |  |  |  |
-| Erlang | v |  |  |  |  |  |  |
-| Go | v | v |  |  |  |  |  |
-| Groovy | v |  |  |  |  |  |  |
-| Haskell | v | v |  |  |  |  |  |
-| HTML | v | v |  |  |  |  |  |
-| Java | v | v | v |  |  |  |  |
-| JS | v | v |  |  |  |  |  |
-| JSON | v | v | v |  |  |  |  |
-| Julia | v |  |  |  |  |  |  |
-| Kotlin |  |  |  |  |  |  |  |
-| Lisp | v |  |  |  |  |  |  |
-| Lua | v | v | v |  |  |  |  |
-| Nim | v |  |  |  |  |  |  |
-| Ocaml | v |  |  |  |  |  |  |
-| Odin | v | v | v |  |  |  |  |
-| OpenSCAD |  |  |  |  |  |  |  |
-| Perl | v | v |  |  |  |  |  |
-| PHP | v | v | v |  |  |  |  |
-| Python | v | v | v |  |  |  |  |
-| R | v | v | v |  |  |  |  |
-| Ruby | v |  |  |  |  |  |  |
-| Rust | v | v |  |  |  |  |  |
-| Scala | v |  |  |  |  |  |  |
-| SQL | v | v | v |  |  |  |  |
-| Swift | v |  |  |  |  |  |  |
-| TeX | v | v | v |  |  |  |  |
-| TS | v | v |  |  |  |  |  |
-| Vala |  |  |  |  |  |  |  |
-| XML | v | v | v |  |  |  |  |
-| Zig | v | v |  |  |  |  |  |
+| Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger| Formatter | LSP Bundle |
+|------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|:---------:|:---------:|
+| Arduino |  |  |  |  |  |  |  | |
+| Bash |v | v | v |  |  |  |  | |
+| C# | v |  |  |  |  |  |  | |
+| C/C++ | v | v | v |  | v | v |  | v |
+| Crystal | v | v |  |  |  |  |  | |
+| CSS | v | v |  |  |  |  |  | |
+| Elixir | v | v |  |  |  |  |  | |
+| ELM | v |  |  |  |  |  |  | |
+| Erlang | v |  |  |  |  |  |  | |
+| Go | v | v |  |  |  |  |  | |
+| Groovy | v |  |  |  |  |  |  | |
+| Haskell | v | v |  |  |  |  |  | |
+| HTML | v | v |  |  |  |  |  | |
+| Java | v | v | v |  |  |  |  | |
+| JS | v | v | v |  |  |  |  | |
+| JSON | v | v | v |  |  |  |  | |
+| Julia | v |  |  |  |  |  |  | |
+| Kotlin |  |  |  |  |  |  |  | |
+| Lisp | v |  |  |  |  |  |  | |
+| Lua | v | v | v |  |  |  |  | v |
+| Nim | v |  |  |  |  |  |  | |
+| Ocaml | v |  |  |  |  |  |  | |
+| Odin | v | v | v |  |  |  |  | |
+| OpenSCAD |  |  |  |  |  |  |  | |
+| Perl | v | v |  |  |  |  |  | |
+| PHP | v | v | v |  |  |  |  | |
+| Python | v | v | v |  |  |  |  | |
+| R | v | v | v |  |  |  |  | |
+| Ruby | v |  |  |  |  |  |  | |
+| Rust | v | v | v |  |  |  |  | v |
+| Scala | v |  |  |  |  |  |  | |
+| SQL | v | v | v |  |  |  |  | |
+| Swift | v |  |  |  |  |  |  | |
+| TeX | v | v | v |  |  |  |  | v |
+| TS | v | v |  |  |  |  |  | |
+| Vala |  |  |  |  |  |  |  | |
+| XML | v | v | v |  |  |  |  | |
+| Zig | v | v |  |  |  |  |  | v |
+
+## Language-specific setup guide
+
+### C/C++
+`lpm install ide`
+
+### Lua
+`lpm install lsp_lua`
+
+### Rust
+`lpm install lsp_rust`
+
+### TeX
+`lpm install lsp_tex`
+
+### Zig
+`lpm install lsp_zig`
+
+### Markdown
+`lpm install ghmarkdown`
 
 ## Credits
 - https://github.com/lite-xl/lite-xl-colors
@@ -103,5 +125,4 @@ cd ./lite-xl-ide
 - https://github.com/drmargarido/TodoTreeView
 - https://github.com/jgmdev/lite-xl-threads
 - https://github.com/vincens2005/lite-formatters
-
-And many more...
+- And many more...
