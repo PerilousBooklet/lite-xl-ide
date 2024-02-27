@@ -46,33 +46,46 @@ lpm install align_carets \
 #             lsp_zig
 
 # Arch Linux specific lsp-servers/linters installation
-# sudo pacman --noconfirm -S python-lsp-server \
-#                            vscode-html-languageserver \
-#                            vscode-css-languageserver \
-#                            typescript-language-server \
-#                            vscode-json-languageserver \
-#                            gopls \
-#                            haskell-language-server\
-#                            rust-analyzer
-#                            zls \
-#                            arduino-language-server
-# paru --noconfirm -S jdtls \
-#                     texlab-bin \
-#                     r-languageserver \
-#                     quick-lint-js \
-#                     nodejs-intelephense \
-#                     flow-bin \
-#                     sql-language-server \
-#                     crystalline-bin \
-#                     elixir-ls \
-#                     odinls
-# sudo pacman --noconfirm -S flake8 \
-#                            shellcheck \
-#                            texlive-binextra
+sudo pacman --noconfirm -S python-lsp-server \
+                           vscode-html-languageserver \
+                           vscode-css-languageserver \
+                           typescript-language-server \
+                           vscode-json-languageserver \
+                           gopls \
+                           haskell-language-server\
+                           rust-analyzer
+                           zls \
+                           arduino-language-server
+paru --noconfirm -S jdtls \
+                    texlab-bin \
+                    r-languageserver \
+                    quick-lint-js \
+                    nodejs-intelephense \
+                    flow-bin \
+                    sql-language-server \
+                    crystalline-bin \
+                    elixir-ls \
+                    odinls \
+                    typst-lsp
+sudo pacman --noconfirm -S flake8 \
+                           shellcheck \
+                           texlive-binextra
 
-# Add some necessary configuration options
-echo "
---local lintplus = require "plugins.lintplus"
+# Add lint+ configuration options
+echo -e "
+--local lintplus = require \"plugins.lintplus\"
 --lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a file
 --lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
 " >> ~/.config/lite-xl/init.lua
+
+# Add snippets files
+mkdir -v ~/.config/lite-xl/plugins/snippets
+git clone "https://github.com/rafamadriz/friendly-snippets.git" ~/.config/lite-xl/plugins/snippets/json
+echo -e "
+local lsp_snippets = require \"plugins.lsp_snippets\"
+lsp_snippets.add_paths {
+    -- relative paths are prefixed with the userdir
+    'plugins/snippets/json'
+}
+" >> ~/.config/lite-xl/init.lua
+
