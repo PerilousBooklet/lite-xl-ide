@@ -45,7 +45,11 @@ lpm install align_carets \
 #             lsp_tex \
 #             lsp_zig
 
-# Arch Linux specific lsp-servers/linters installation
+# Arch Linux specific language/lsp-servers/linters installation
+sudo pacman --noconfirm -S 
+paru --noconfirm -S scala \
+                    scala-docs \
+                    scala-sources
 sudo pacman --noconfirm -S python-lsp-server \
                            vscode-html-languageserver \
                            vscode-css-languageserver \
@@ -55,7 +59,8 @@ sudo pacman --noconfirm -S python-lsp-server \
                            haskell-language-server\
                            rust-analyzer
                            zls \
-                           arduino-language-server
+                           arduino-language-server \
+                           dart
 paru --noconfirm -S jdtls \
                     texlab-bin \
                     r-languageserver \
@@ -66,10 +71,18 @@ paru --noconfirm -S jdtls \
                     crystalline-bin \
                     elixir-ls \
                     odinls \
-                    typst-lsp
+                    typst-lsp \
+                    kotlin-Language-server \
+                    clojure-lsp-bin \
+                    metals
 sudo pacman --noconfirm -S flake8 \
                            shellcheck \
                            texlive-binextra
+
+# Ruby lsp setup
+# Install rvm, install a ruby version with rvm, install ruby-lsp with gem
+
+# Add lsp configuration options
 
 # Add lint+ configuration options
 echo -e "
@@ -83,9 +96,6 @@ mkdir -v ~/.config/lite-xl/plugins/snippets
 git clone "https://github.com/rafamadriz/friendly-snippets.git" ~/.config/lite-xl/plugins/snippets/json
 echo -e "
 local lsp_snippets = require \"plugins.lsp_snippets\"
-lsp_snippets.add_paths {
-    -- relative paths are prefixed with the userdir
-    'plugins/snippets/json'
-}
+lsp_snippets.add_paths {'plugins/snippets/json'}
 " >> ~/.config/lite-xl/init.lua
 
