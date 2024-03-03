@@ -66,7 +66,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | CSS |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Dart |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Elixir |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Elm |<span>&#10004;</span>|  |  |  |  |  |
+| Elm |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
 | Erlang |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Go |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Groovy |  |<span>&#10004;</span> \*|<span>&#10004;</span> \*|  |  |  |
