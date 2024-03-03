@@ -37,52 +37,41 @@ lpm install align_carets \
 # More plugins
 # lpm install "exec" markers opacity extend_selection_line sort titleize
 
-# LSP servers
-# lpm install lsp_c \
-#             lsp_lua \
-#             lsp_quicklintjs \
-#             lsp_rust \
-#             lsp_tex \
-#             lsp_zig
-
-# Arch Linux specific language/lsp-servers/linters installation
-sudo pacman --noconfirm -S 
-paru --noconfirm -S scala \
-                    scala-docs \
-                    scala-sources
-sudo pacman --noconfirm -S python-lsp-server \
-                           vscode-html-languageserver \
-                           vscode-css-languageserver \
-                           typescript-language-server \
-                           vscode-json-languageserver \
-                           gopls \
-                           haskell-language-server\
-                           rust-analyzer
-                           zls \
-                           arduino-language-server \
-                           dart
-paru --noconfirm -S jdtls \
-                    texlab-bin \
-                    r-languageserver \
-                    quick-lint-js \
-                    nodejs-intelephense \
-                    flow-bin \
-                    sql-language-server \
-                    crystalline-bin \
-                    elixir-ls \
-                    odinls \
-                    typst-lsp \
-                    kotlin-Language-server \
-                    clojure-lsp-bin \
-                    metals
-sudo pacman --noconfirm -S flake8 \
-                           shellcheck \
-                           texlive-binextra
-
-# Ruby lsp setup
-# Install rvm, install a ruby version with rvm, install ruby-lsp with gem
-
 # Add lsp configuration options
+echo -e "
+local lsp = require \"plugins.lsp\"
+local lspconfig = require \"plugins.lsp.config\"
+--lspconfig.sumneko_lua.setup()
+--lspconfig.bashls.setup() -- Bash
+--lspconfig.texlab.setup() -- TeX
+--lspconfig.clangd.setup() -- C/C++
+--lspconfig.jdtls.setup() -- Java
+--lspconfig.pylsp.setup() -- Python
+--lspconfig.html.setup() -- HTML
+--lspconfig.cssls.setup() -- CSS
+--lspconfig.tsserver.setup() -- JS/TS
+--lspconfig.intelephense.setup() -- PHP
+--lspconfig.jsonls.setup() -- JSON
+--lspconfig.sqlls.setup() -- SQL
+--lspconfig.perlnavigator.setup() -- Perl
+--lspconfig.tailwindcss.setup() -- Tailwind CSS
+--lspconfig.lemminx.setup() -- XML
+--lspconfig.rlanguageserver.setup() -- R
+--lspconfig.crystalline.setup() -- Crystal
+--lspconfig.elixirls.setup() -- Elixir
+--lspconfig.gopls.setup() -- Go
+--lspconfig.hls.setup() -- Haskell
+--lspconfig.rust-analyzer.setup() -- Rust
+--lspconfig.zls.setup() -- Zig
+--lspconfig.typst_lsp.setup() -- Typst
+--lspconfig.kotlin_language_server.setup() -- Kotlin
+--lspconfig.groovyls.setup() -- Groovy
+--lspconfig.clojure_lsp.setup() -- Clojure
+--lspconfig.dartls.setup() -- Dart
+--lspconfig.ruby_lsp.setup() -- Ruby
+--lspconfig.ocaml_lsp.setup() -- OCaml
+--lspconfig.metals.setup() -- Scala
+" >> ~/.config/lite-xl/init.lua
 
 # Add lint+ configuration options
 echo -e "

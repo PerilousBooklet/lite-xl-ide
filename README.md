@@ -6,7 +6,7 @@ A set of plugins and configuration files that aims to turn `Lite XL` into a prop
 
 This project is still WIP.
 
-## Installation
+## Basic Installation
 
 Arch Linux (requires the `paru` AUR helper):
 ```sh
@@ -14,6 +14,9 @@ git clone "https://github.com/PerilousBooklet/lite-xl-ide.git"
 cd ./lite-xl-ide
 ./install.sh
 ```
+
+## Advanced Installation
+To enable intellisense (LSP server, linter) support for any of the languages in the table below, see the [dedicated guide](./docs.md)
 
 ## Features
 
@@ -34,12 +37,11 @@ cd ./lite-xl-ide
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Builder integration
 - [x] Debugger integration
-- [ ] Foldable code blocks <!-- WIP -->
-- [ ] Horizontal scrolling for project treeview <!-- WIP -->
-- [ ] Document symbols treeview <!-- WIP -->
-- [ ] Automatic textEdit for in-file dependency reference <!-- WIP -->
+- [ ] Foldable code blocks
+- [ ] Horizontal scrolling for project treeview
+- [ ] Document symbols treeview
+- [ ] Automatic textEdit for in-file dependency reference
 - [ ] Support goto-definition/implementation for decompiled libraries (es. java)
-- [ ] Quick code runner (Es. python notebook)
 - [ ] Paste converting from JSON to Typescript
 - [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Project-wide refactoring
@@ -50,35 +52,35 @@ cd ./lite-xl-ide
 
 ## Language support status
 
-<!-- check: <span>&#10004;</span> -->
+<!-- check:<span>&#10004;</span>-->
 <!-- x: <span>&#10008;</span> -->
 
-| Language         | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
+| Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
 | Arduino |  |  |  |  |  |  |  |
 | Bash |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | C# |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | C/C++ |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|
-| Clojure |<span>&#10004;</span>|<span>&#10004;</span>| <span>&#10004;</span> |  |  |  |
+| Clojure |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Crystal |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
 | CSS |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Dart | <span>&#10004;</span> | <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
+| Dart |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Elixir |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| ELM |<span>&#10004;</span>|  |  |  |  |  |
-| Erlang |  | <span>&#10004;</span> | <span>&#10004;</span> |<span>&#10004;</span>|  |  |
+| Elm |<span>&#10004;</span>|  |  |  |  |  |
+| Erlang |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Go |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Groovy |  | <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
+| Groovy |  |<span>&#10004;</span> \*|<span>&#10004;</span> \*|  |  |  |
 | Haskell |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | HTML |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Java |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| JS |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| Javascript |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | JSON |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10008;</span>|  |  |
 | Julia |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Kotlin |  | <span>&#10004;</span> | <span>&#10004;</span> |<span>&#10004;</span>|  |  |
+| Kotlin |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Lisp |<span>&#10004;</span>|  |  |  |  |  |
 | Lua |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |
-| Nim |<span>&#10004;</span>|  | <span>&#10004;</span> |  |  |  |
-| Nix |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| Nim |<span>&#10004;</span>|  |  |  |  |  |
+| Nix |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | Ocaml |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | Odin |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | OpenSCAD |  |  |  |  |  |  |
@@ -86,19 +88,19 @@ cd ./lite-xl-ide
 | PHP |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Python |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | R |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Ruby |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
+| Ruby |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Rust |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |
-| Scala |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
+| Scala |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |<span>&#10004;</span>|  |  |
 | SQL |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Svelte |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Swift |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Tailwind |<span>&#10004;</span>|<span>&#10004;</span>|  | <span>&#10008;</span> |  |  |
+| Svelte |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
+| Tailwind |<span>&#10004;</span>|<span>&#10004;</span> \*|<span>&#10008;</span>|<span>&#10008;</span>|  |  |
 | TeX |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| TS |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
-| Typst |  |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Vala |  |  |  |  |  |  |
+| Typescript |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
+| Typst |  |<span>&#10004;</span> \*|<span>&#10004;</span>|  |  |  |
 | XML |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Zig | <span>&#10004;</span> | <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
+| Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
+
+\*: there are still some problems to be solved
 
 ## LSP bundle support status
 
@@ -107,7 +109,7 @@ cd ./lite-xl-ide
 | Arduino |  |  | |
 | Bash |  |  | |
 | C# |  |  | |
-| C/C++ | <span>&#10004;</span> | `lsp_c` | `ide` |
+| C/C++ |<span>&#10004;</span>| `lsp_c` | `ide` |
 | Clojure |   |  | |
 | Crystal |  |  | |
 | CSS |  |  | |
@@ -120,12 +122,12 @@ cd ./lite-xl-ide
 | Haskell |  |  | |
 | HTML |  |  | |
 | Java |  |  | |
-| JS |  |  | |
+| Javascript |  |  | |
 | JSON |  |  | |
 | Julia |  |  | |
 | Kotlin |  |  | |
 | Lisp |  |  | |
-| Lua | <span>&#10004;</span> | `lsp_lua` | |
+| Lua |<span>&#10004;</span>| `lsp_lua` | |
 | Nim |  |  | |
 | Nix |  |  | |
 | Ocaml |  |  | |
@@ -136,18 +138,18 @@ cd ./lite-xl-ide
 | Python |  |  | |
 | R |  |  | |
 | Ruby |  |  | |
-| Rust | <span>&#10004;</span> | `lsp_rust` | |
+| Rust |<span>&#10004;</span>| `lsp_rust` | |
 | Scala |  |  | |
 | SQL |  |  | |
 | Svelte |  |  | |
 | Swift |  |  | |
 | Tailwind |  |  | |
-| TeX | <span>&#10004;</span> | `lsp_tex` | |
-| TS |  |  | |
+| TeX |<span>&#10004;</span>| `lsp_tex` | |
+| Typescript |  |  | |
 | Typst |  |  | |
 | Vala |  |  | |
 | XML |  |  | |
-| Zig | <span>&#10004;</span> | `lsp_zig` | |
+| Zig |<span>&#10004;</span>| `lsp_zig` | |
 
 ## Credits
 
