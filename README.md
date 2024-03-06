@@ -2,9 +2,11 @@
 
 ## Introduction
 
-A set of plugins and configuration files that aims to turn `Lite XL` into a proper IDE.
+Documentation for a set of plugins and configuration files that aims to turn `Lite XL` into a proper IDE.
 
 This project is still WIP.
+
+Once all manual setup istances and all LSP bundles are completed, the install script will be replaced by metapackages in [Adam's repo](https://github.com/adamharrison/lite-xl-ide).
 
 ## Basic Installation
 
@@ -20,8 +22,8 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 
 ## Features
 
-- [x] Syntax highlighting for 70+ programming and configuration languages
-- [x] LSP/Linting/Snippets support for the most used programming languages
+- [x] Syntax highlighting for 70+ languages
+- [x] Intellisense support for 40+ languages
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -64,10 +66,12 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Clojure |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Crystal |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
 | CSS |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
+| D |  |  |  |  |  |  |
 | Dart |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Elixir |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Elm |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
 | Erlang |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| F# |  |  |  |  |  |  |
 | Go |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Groovy |  |<span>&#10004;</span> \*|<span>&#10004;</span> \*|  |  |  |
 | Haskell |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
@@ -93,14 +97,15 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Scala |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |<span>&#10004;</span>|  |  |
 | SQL |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Svelte |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Tailwind |<span>&#10004;</span>|<span>&#10004;</span> \*|<span>&#10008;</span>|<span>&#10008;</span>|  |  |
+| Tailwind |<span>&#10004;</span>|<span>&#10004;</span> \*|  |<span>&#10008;</span>|  |  |
 | TeX |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Typescript |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
 | Typst |  |<span>&#10004;</span> \*|<span>&#10004;</span>|  |  |  |
+| V |  |  |  |  |  |  |
 | XML |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 
-\*: there are still some problems to be solved
+`\*`: there are still some problems to solve
 
 ## LSP bundle support status
 
@@ -135,19 +140,17 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | OpenSCAD |  |  | |
 | Perl |  |  | |
 | PHP |  |  | |
-| Python |  |  | |
+| Python | <span>&#10004;</span> | `lsp_python` | |
 | R |  |  | |
 | Ruby |  |  | |
 | Rust |<span>&#10004;</span>| `lsp_rust` | |
 | Scala |  |  | |
 | SQL |  |  | |
 | Svelte |  |  | |
-| Swift |  |  | |
 | Tailwind |  |  | |
 | TeX |<span>&#10004;</span>| `lsp_tex` | |
 | Typescript |  |  | |
 | Typst |  |  | |
-| Vala |  |  | |
 | XML |  |  | |
 | Zig |<span>&#10004;</span>| `lsp_zig` | |
 

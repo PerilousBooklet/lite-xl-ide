@@ -41,36 +41,53 @@ lpm install align_carets \
 echo -e "
 local lsp = require \"plugins.lsp\"
 local lspconfig = require \"plugins.lsp.config\"
---lspconfig.sumneko_lua.setup()
+-- ? -- Arduino
+-- ? -- Assembly ?
+-- ? -- C#
+-- ? -- D
+-- ? -- Elm
+-- ? -- Erlang
+-- ? -- F#
+-- ? -- Julia
+-- ? -- Lisp
+-- ? -- Nim
+-- ? -- Nix
+-- ? -- OpenSCAD
+-- ? -- V
 --lspconfig.bashls.setup() -- Bash
---lspconfig.texlab.setup() -- TeX
 --lspconfig.clangd.setup() -- C/C++
---lspconfig.jdtls.setup() -- Java
---lspconfig.pylsp.setup() -- Python
---lspconfig.html.setup() -- HTML
---lspconfig.cssls.setup() -- CSS
---lspconfig.tsserver.setup() -- JS/TS
---lspconfig.intelephense.setup() -- PHP
---lspconfig.jsonls.setup() -- JSON
---lspconfig.sqlls.setup() -- SQL
---lspconfig.perlnavigator.setup() -- Perl
---lspconfig.tailwindcss.setup() -- Tailwind CSS
---lspconfig.lemminx.setup() -- XML
---lspconfig.rlanguageserver.setup() -- R
+--lspconfig.clojure_lsp.setup() -- Clojure
 --lspconfig.crystalline.setup() -- Crystal
+--lspconfig.cssls.setup() -- CSS
+--lspconfig.dartls.setup() -- Dart
 --lspconfig.elixirls.setup() -- Elixir
 --lspconfig.gopls.setup() -- Go
---lspconfig.hls.setup() -- Haskell
---lspconfig.rust-analyzer.setup() -- Rust
---lspconfig.zls.setup() -- Zig
---lspconfig.typst_lsp.setup() -- Typst
---lspconfig.kotlin_language_server.setup() -- Kotlin
 --lspconfig.groovyls.setup() -- Groovy
---lspconfig.clojure_lsp.setup() -- Clojure
---lspconfig.dartls.setup() -- Dart
---lspconfig.ruby_lsp.setup() -- Ruby
---lspconfig.ocaml_lsp.setup() -- OCaml
+--lspconfig.hls.setup() -- Haskell
+--lspconfig.html.setup() -- HTML
+--lspconfig.intelephense.setup() -- PHP
+--lspconfig.jdtls.setup() -- Java
+--lspconfig.jsonls.setup() -- JSON
+--lspconfig.kotlin_language_server.setup() -- Kotlin
+--lspconfig.lemminx.setup() -- XML
 --lspconfig.metals.setup() -- Scala
+--lspconfig.ocaml_lsp.setup() -- OCaml
+--lspconfig.perlnavigator.setup() -- Perl
+--lspconfig.pylsp.setup() -- Python
+--lspconfig.rlanguageserver.setup() -- R
+--lspconfig.ruby_lsp.setup() -- Ruby
+--lspconfig.rust-analyzer.setup() -- Rust
+--lspconfig.sqlls.setup() -- SQL
+--lspconfig.sumneko_lua.setup() -- Lua
+--lspconfig.texlab.setup() -- TeX
+--lspconfig.tsserver.setup() -- JS/TS
+--lspconfig.typst_lsp.setup() -- Typst
+--lspconfig.zls.setup() -- Zig
+
+--lspconfig.tailwindcss.setup() -- Tailwind CSS
+-- ? -- Svelte
+
+-- ? -- Emmet
 " >> ~/.config/lite-xl/init.lua
 
 # Add lint+ configuration options
@@ -87,4 +104,3 @@ echo -e "
 local lsp_snippets = require \"plugins.lsp_snippets\"
 lsp_snippets.add_paths {'plugins/snippets/json'}
 " >> ~/.config/lite-xl/init.lua
-
