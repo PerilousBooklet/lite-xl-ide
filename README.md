@@ -44,11 +44,11 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 - [ ] Document symbols treeview
 - [ ] Automatic textEdit for in-file dependency reference
 - [ ] Support goto-definition/implementation for decompiled libraries (es. java)
-- [ ] Paste converting from JSON to Typescript
 - [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Project-wide refactoring
-- [ ] Multi-threaded find/replace/refactor
 - [ ] Project template manager
+- [ ] Paste converting from JSON to Typescript
+- [ ] Multi-threaded find/replace/refactor
 - [ ] Gradle tasks dedicated commandview
 - [ ] Tmux integration
 
@@ -105,7 +105,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | XML |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 
-`\*`: there are still some problems to solve
+`*`: there are still some problems to solve
 
 ## LSP bundle support status
 
