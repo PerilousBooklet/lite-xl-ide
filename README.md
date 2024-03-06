@@ -60,13 +60,13 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
 | Arduino |  |  |  |  |  |  |  |
-| Bash |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| Bash |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |  |
 | C# |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | C/C++ |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|
 | Clojure |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Crystal |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
 | CSS |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| D |  |  |  |  |  |  |
+| D | <span>&#10004;</span> |  |  |  |  |  |
 | Dart |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | Elixir |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
 | Elm |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
@@ -82,14 +82,14 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Julia |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | Kotlin |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Lisp |<span>&#10004;</span>|  |  |  |  |  |
-| Lua |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |
-| Nim |<span>&#10004;</span>|  |  |  |  |  |
+| Lua |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |
+| Nim |<span>&#10004;</span>|  |  |  ex|  |  |
 | Nix |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | Ocaml |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
 | Odin |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
 | OpenSCAD |  |  |  |  |  |  |
 | Perl |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| PHP |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| PHP |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |  |
 | Python |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | R |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Ruby |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
@@ -101,11 +101,12 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | TeX |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
 | Typescript |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
 | Typst |  |<span>&#10004;</span> \*|<span>&#10004;</span>|  |  |  |
-| V |  |  |  |  |  |  |
+| V | <span>&#10004;</span> |  |  |  |  |  |
 | XML |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
+| Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|  |  |  |
 
 `*`: there are still some problems to solve
+`ex`: external linter
 
 ## LSP bundle support status
 
