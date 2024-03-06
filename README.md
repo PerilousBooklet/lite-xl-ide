@@ -109,7 +109,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 
 ## LSP bundle support status
 
-| Language         | LSP Bundle | LPM package | IDE packages |
+| Language         | LSP Bundle | LPM Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
 | Arduino |  |  | |
 | Bash |  |  | |
