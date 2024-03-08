@@ -29,6 +29,10 @@ Note: this guide is specific to Arch Linux only.
 
 `sudo pacman -S vscode-css-languageserver`
 
+### D
+`paru -S serve-d-bin`
+`sudo pacman -S dub`
+
 ### Dart
 
 `sudo pacman -S dart`
@@ -44,6 +48,9 @@ Note: this guide is specific to Arch Linux only.
 ### Erlang
 
 `paru -S erlang-ls` WIP
+
+### F#
+`paru -S fsharp fsharp-language-server`
 
 ### Go
 
@@ -179,6 +186,9 @@ paru -S metals
 ### Typst
 
 `paru -S typst-lsp`
+
+### V
+`paru -S v-analyzer-bin`
 
 ### XML
 
