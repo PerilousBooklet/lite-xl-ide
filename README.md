@@ -49,61 +49,62 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 - [ ] Project template manager
 - [ ] Paste converting from JSON to Typescript
 - [ ] Multi-threaded find/replace/refactor
-- [ ] Gradle tasks dedicated commandview
 - [ ] Tmux integration
+- [ ] Gradle tasks dedicated commandview
 
 ## Language support status
 
-<!-- check:<span>&#10004;</span>-->
+<!-- check:<span>&#9989;</span>-->
 <!-- x: <span>&#10008;</span> -->
+<!-- &#9989; -->
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
 | Arduino |  |  |  |  |  |  |  |
-| Bash |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |  |
-| C# |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| C/C++ |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|
-| Clojure |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Crystal |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
-| CSS |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| D | <span>&#10004;</span> |  |  |  |  |  |
-| Dart |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Elixir |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Elm |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |  |  |  |
-| Erlang |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
+| Bash |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
+| C# |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |
+| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|
+| Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| D | <span>&#9989;</span> |  |  |  |  |  |
+| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Erlang |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | F# |  |  |  |  |  |  |
-| Go |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Groovy |  |<span>&#10004;</span> \*|<span>&#10004;</span> \*|  |  |  |
-| Haskell |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| HTML |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Java |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Javascript |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| JSON |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10008;</span>|  |  |
-| Julia |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Kotlin |  |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Lisp |<span>&#10004;</span>|  |  |  |  |  |
-| Lua |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |
-| Nim |<span>&#10004;</span>|  |  |  ex|  |  |
-| Nix |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Ocaml |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Odin |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
+| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| Groovy |  |<span>&#9989;</span> \*|<span>&#9989;</span> \*|  |  |  |
+| Haskell |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#10008;</span>|  |  |
+| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
+| Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Lisp |<span>&#9989;</span>|  |  |  |  |  |
+| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |
+| Nim |<span>&#9989;</span>|  |  |  ex|  |  |
+| Nix |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
+| Ocaml |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
+| Odin |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | OpenSCAD |  |  |  |  |  |  |
-| Perl |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| PHP |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|<span>&#10004;</span>|  |  |
-| Python |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| R |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Ruby |<span>&#10004;</span>|<span>&#10004;</span>|  |<span>&#10004;</span>|  |  |
-| Rust |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |
-| Scala |<span>&#10004;</span>| <span>&#10004;</span> | <span>&#10004;</span> |<span>&#10004;</span>|  |  |
-| SQL |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Svelte |<span>&#10004;</span>|  |  |<span>&#10004;</span>|  |  |
-| Tailwind |<span>&#10004;</span>|<span>&#10004;</span> \*|  |<span>&#10008;</span>|  |  |
-| TeX |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |
-| Typescript |<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |  |
-| Typst |  |<span>&#10004;</span> \*|<span>&#10004;</span>|  |  |  |
-| V | <span>&#10004;</span> |  |  |  |  |  |
-| XML |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span>|  |  |  |
-| Zig |<span>&#10004;</span>|<span>&#10004;</span>|<span>&#10004;</span> ex|  |  |  |
+| Perl |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| PHP |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
+| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| R |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Ruby |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
+| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |
+| Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |
+| SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
+| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#10008;</span>|  |  |
+| TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |
+| V | <span>&#9989;</span> |  |  |  |  |  |
+| XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |
 
 `*`: there are still some problems to solve
 `ex`: external linter
@@ -115,7 +116,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Arduino |  |  | |
 | Bash |  |  | |
 | C# |  |  | |
-| C/C++ |<span>&#10004;</span>| `lsp_c` | `ide` |
+| C/C++ |<span>&#9989;</span>| `lsp_c` | `ide` |
 | Clojure |   |  | |
 | Crystal |  |  | |
 | CSS |  |  | |
@@ -133,7 +134,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Julia |  |  | |
 | Kotlin |  |  | |
 | Lisp |  |  | |
-| Lua |<span>&#10004;</span>| `lsp_lua` | |
+| Lua |<span>&#9989;</span>| `lsp_lua` | |
 | Nim |  |  | |
 | Nix |  |  | |
 | Ocaml |  |  | |
@@ -141,19 +142,19 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | OpenSCAD |  |  | |
 | Perl |  |  | |
 | PHP |  |  | |
-| Python | <span>&#10004;</span> | `lsp_python` | |
+| Python | <span>&#9989;</span> | `lsp_python` | |
 | R |  |  | |
 | Ruby |  |  | |
-| Rust |<span>&#10004;</span>| `lsp_rust` | |
+| Rust |<span>&#9989;</span>| `lsp_rust` | |
 | Scala |  |  | |
 | SQL |  |  | |
 | Svelte |  |  | |
 | Tailwind |  |  | |
-| TeX |<span>&#10004;</span>| `lsp_tex` | |
+| TeX |<span>&#9989;</span>| `lsp_tex` | |
 | Typescript |  |  | |
 | Typst |  |  | |
 | XML |  |  | |
-| Zig |<span>&#10004;</span>| `lsp_zig` | |
+| Zig |<span>&#9989;</span>| `lsp_zig` | |
 
 ## Credits
 

@@ -12,6 +12,9 @@ Note: this guide is specific to Arch Linux only.
 `sudo pacman -S bash-language-server shellcheck`
 
 ### C#
+`sudo pacman -S dotnet-sdk`
+
+`paru -S omnisharp-roslyn-bin`
 
 ### C/C++
 
@@ -31,6 +34,7 @@ Note: this guide is specific to Arch Linux only.
 
 ### D
 `paru -S serve-d-bin`
+
 `sudo pacman -S dub`
 
 ### Dart
@@ -50,7 +54,10 @@ Note: this guide is specific to Arch Linux only.
 `paru -S erlang-ls` WIP
 
 ### F#
-`paru -S fsharp fsharp-language-server`
+
+`sudo pacman -S dotnet-sdk`
+
+`paru -S fsharp-language-server`
 
 ### Go
 
