@@ -107,6 +107,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |
 
 `*`: there are still some problems to solve
+
 `ex`: external linter
 
 ## LSP bundle support status
