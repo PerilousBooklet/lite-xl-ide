@@ -55,8 +55,8 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 ## Language support status
 
 <!-- check:<span>&#9989;</span>-->
-<!-- x: <span>&#10008;</span> -->
-<!-- &#9989; -->
+<!-- x: <span>&#x274c;</span> -->
+<!-- &#9989;  &#x274c; -->
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
@@ -79,7 +79,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
 | Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#10008;</span>|  |  |
+| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#x274c;</span>|  |  |
 | Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
 | Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | Lisp |<span>&#9989;</span>|  |  |  |  |  |
@@ -98,7 +98,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |
 | SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
-| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#10008;</span>|  |  |
+| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#x274c;</span>|  |  |
 | TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
 | Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |
