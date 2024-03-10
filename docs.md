@@ -85,9 +85,13 @@ Note: this guide is specific to Arch Linux only.
 
 ### Javascript
 
-`?`
-
 ### Julia
+
+`sudo pacman -S julia`
+
+`julia`
+
+`Import Pkg; Pkg.add("LanguageServer")`
 
 ### Kotlin
 

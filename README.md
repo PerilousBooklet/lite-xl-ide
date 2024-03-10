@@ -56,7 +56,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 
 <!-- check:<span>&#9989;</span>-->
 <!-- x: <span>&#x274c;</span> -->
-<!-- &#9989;  &#x274c; -->
+<!-- 1004  1008 -->
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
@@ -67,7 +67,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
 | CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| D | <span>&#9989;</span> |  |  |  |  |  |
+| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
 | Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
@@ -102,7 +102,7 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 | TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
 | Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
 | Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |
-| V | <span>&#9989;</span> |  |  |  |  |  |
+| V | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |
 
