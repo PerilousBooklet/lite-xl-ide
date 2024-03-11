@@ -114,48 +114,48 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 
 | Language         | LSP Bundle | LPM Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
-| Arduino |  |  | |
-| Bash |  |  | |
-| C# |  |  | |
+| Arduino |  |  |  |
+| Bash |  |  |  |
+| C# |  |  |  |
 | C/C++ |<span>&#9989;</span>| `lsp_c` | `ide` |
-| Clojure |   |  | |
-| Crystal |  |  | |
-| CSS |  |  | |
-| Dart |  |  | |
-| Elixir |  |  | |
-| ELM |  |  | |
-| Erlang |  |  | |
-| Go |  |  | |
-| Groovy |  |  | |
-| Haskell |  |  | |
-| HTML |  |  | |
-| Java |  |  | |
-| Javascript |  |  | |
-| JSON |  |  | |
-| Julia |  |  | |
-| Kotlin |  |  | |
-| Lisp |  |  | |
-| Lua |<span>&#9989;</span>| `lsp_lua` | |
-| Nim |  |  | |
-| Nix |  |  | |
-| Ocaml |  |  | |
-| Odin |  |  | |
-| OpenSCAD |  |  | |
-| Perl |  |  | |
-| PHP |  |  | |
-| Python | <span>&#9989;</span> | `lsp_python` | |
-| R |  |  | |
-| Ruby |  |  | |
-| Rust |<span>&#9989;</span>| `lsp_rust` | |
-| Scala |  |  | |
-| SQL |  |  | |
-| Svelte |  |  | |
-| Tailwind |  |  | |
-| TeX |<span>&#9989;</span>| `lsp_tex` | |
-| Typescript |  |  | |
-| Typst |  |  | |
-| XML |  |  | |
-| Zig |<span>&#9989;</span>| `lsp_zig` | |
+| Clojure |   |  |  |
+| Crystal |  |  |  |
+| CSS |  |  |  |
+| Dart |  |  |  |
+| Elixir |  |  |  |
+| ELM |  |  |  |
+| Erlang |  |  |  |
+| Go |  |  |  |
+| Groovy |  |  |  |
+| Haskell |  |  |  |
+| HTML |  |  |  |
+| Java | <span>&#9989;</span> | `lsp_java` |  |
+| Javascript | <span>&#9989;</span> | `lsp_typescript` |  |
+| JSON |  |  |  |
+| Julia |  |  |  |
+| Kotlin |  |  |  |
+| Lisp |  |  |  |
+| Lua |<span>&#9989;</span>| `lsp_lua` |  |
+| Nim |  |  |  |
+| Nix |  |  |  |
+| Ocaml |  |  |  |
+| Odin |  |  |  |
+| OpenSCAD |  |  |  |
+| Perl |  |  |  |
+| PHP |  |  |  |
+| Python | <span>&#9989;</span> | `lsp_python` |  |
+| R |  |  |  |
+| Ruby |  |  |  |
+| Rust |<span>&#9989;</span>| `lsp_rust` |  |
+| Scala |  |  |  |
+| SQL |  |  |  |
+| Svelte |  |  |  |
+| Tailwind |  |  |  |
+| TeX |<span>&#9989;</span>| `lsp_tex` |  |
+| Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
+| Typst |  |  |  |
+| XML |  |  |  |
+| Zig |<span>&#9989;</span>| `lsp_zig` |  |
 
 ## Credits
 
