@@ -91,7 +91,7 @@ Note: this guide is specific to Arch Linux only.
 
 `julia`
 
-`Import Pkg; Pkg.add("LanguageServer")`
+`]add LanguageServer`
 
 ### Kotlin
 
