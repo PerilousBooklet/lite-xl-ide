@@ -112,8 +112,9 @@ Note: this guide is specific to Arch Linux only.
 ```sh
 sudo pacman -S ocaml opam
 opam init
+opam install core core_bench utop
 opam install dune
-opam install ocaml-lsp-server
+opam install ocaml-format ocaml-lsp-server
 ```
 
 ### Odin

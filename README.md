@@ -26,7 +26,7 @@ lpm install devicons
 ### Install the basic IDE plugins
 
 ```sh
-lpm add https://gothub.com/PerilousBooklet/lite-xl-ide-adam.git
+lpm add https://github.com/PerilousBooklet/lite-xl-ide-adam.git
 lpm install ide
 ```
 
@@ -109,27 +109,28 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Arduino |  |  |  |  |  |  |  |
 | Bash |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
 | C# |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
-| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|<span>&#9989;</span>|
+| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |<span>&#9989;</span>|<span>&#9989;</span>|
 | Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
 | Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |  |
-| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
-| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
+| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  | <span>&#9989;</span> |  |  |
 | Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
 | Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | Erlang |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | F# |  |  |  |  |  |  |  |
-| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| GDScript |<span>&#9989;</span>|  |  |  | <span>&#9989;</span> |  |  |
+| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | Groovy |  |<span>&#9989;</span> \*|<span>&#9989;</span> \*|  |  |  |  |
 | Haskell |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
-| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#x274c;</span>|  |  |  |
-| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
+| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Lisp |<span>&#9989;</span>|  |  |  |  |  |  |
-| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
+| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | Nim |<span>&#9989;</span>|  |  |  |  |  |  |
 | Nix |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
 | Ocaml |  |  |  |<span>&#9989;</span>|  |  |  |
@@ -137,10 +138,10 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | OpenSCAD |  |  |  |  |  |  |  |
 | Perl |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
 | PHP |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
-| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | R |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Ruby |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#9989;</span>|  |  |  |
-| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
 | Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
 | SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
 | Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
@@ -150,7 +151,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
-| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |  |
+| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
 
@@ -208,6 +209,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 - https://github.com/lite-xl/lite-xl-colors
 - https://github.com/lite-xl/lite-xl-plugins
 - https://github.com/lite-xl/lite-xl-lsp
+- https://github.com/vincens2005/lite-formatters
 - https://github.com/liquidev/lintplus
 - https://github.com/vqns/lite-xl-snippets
 - https://github.com/lite-xl/lite-xl-scm
@@ -215,5 +217,4 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 - https://github.com/adamharrison/lite-xl-terminal
 - https://github.com/drmargarido/TodoTreeView
 - https://github.com/jgmdev/lite-xl-threads
-- https://github.com/vincens2005/lite-formatters
 - And many more...
