@@ -8,17 +8,64 @@ This project is still WIP.
 
 Once all manual setup istances and all LSP bundles are completed, the install script will be replaced by metapackages in [Adam's repo](https://github.com/adamharrison/lite-xl-ide).
 
-## Basic Installation
+## Installation
 
-Arch Linux (requires the `paru` AUR helper):
+### Install colors and languages
+
 ```sh
-git clone "https://github.com/PerilousBooklet/lite-xl-ide.git"
-cd ./lite-xl-ide
-./install.sh
+lpm install meta_colors meta_languages
 ```
 
-## Advanced Installation
-To enable intellisense (LSP server, linter) support for any of the languages in the table below, see the [dedicated guide](./docs.md)
+### Install my custom `devicons` plugin
+
+```sh
+lpm add https://github.com/PerilousBooklet/lite-xl-devicons.git
+lpm install devicons
+```
+
+### Install the basic IDE plugins
+
+```sh
+lpm add https://gothub.com/PerilousBooklet/lite-xl-ide-adam.git
+lpm install ide
+```
+
+or a language-specific ide metapackage: e.g. `lpm install ide_c` for C/C++ development.
+
+### Install some more plugins
+
+`lpm install "exec" markers extend_selection_line sort titleize`
+
+### Install an LSP server
+
+#### Manual way
+
+Add the following code to `USERDIR/init.lua` (e.g. `lspconfig.clangd.setup()` enables the `clangd` LSP server for C/C++):
+```lua
+local lsp = require "plugins.lsp"
+lspconfig.clangd.setup()
+```
+
+Do the same by adding an appropriate `lspconfig.lspname.setup()` instruction for every desired language.
+
+The LSP servers names can be found in [here](https://github.com/lite-xl/lite-xl-lsp/blob/master/config.lua).
+
+#### Automated way
+
+Install an lsp bundle from [here](https://github.com/lite-xl/lite-xl-lsp-servers) (e.g. `lpm install lsp_c` for C/C++ development).
+
+Enable automatic linting upon opening and saving a file by adding the following code inside of `USERDIR/init.lua`:
+```lua
+local lintplus = require \"plugins.lintplus\"
+lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a file
+lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
+```
+
+Add code snippets by downloading [these](https://github.com/rafamadriz/friendly-snippets)JSON file into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
+```lua
+local lsp_snippets = require \"plugins.lsp_snippets\"
+lsp_snippets.add_paths {'plugins/snippets/json'}
+```
 
 ## Features
 
@@ -48,63 +95,62 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 - [ ] Project-wide refactoring
 - [ ] Project template manager
 - [ ] Paste converting from JSON to Typescript
-- [ ] Multi-threaded find/replace/refactor
 - [ ] Tmux integration
+- [ ] Docker integration
 - [ ] Gradle tasks dedicated commandview
 
 ## Language support status
 
-<!-- check:<span>&#9989;</span>-->
-<!-- x: <span>&#x274c;</span> -->
-<!-- 1004  1008 -->
+<!-- check: <span>&#9989;</span> or 1004 -->
+<!-- x: <span>&#x274c;</span> or 1008 -->
 
-| Language | Syntax High. | LSP support | Linting | Snippets | Builder | Debugger |
-|------------------|:--------------:|:-------------:|:---------:|:----------:|:-----------:|:---------:|
+| Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
+|------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
 | Arduino |  |  |  |  |  |  |  |
-| Bash |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
-| C# |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |
-| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|
-| Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
-| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Erlang |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| F# |  |  |  |  |  |  |
-| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| Groovy |  |<span>&#9989;</span> \*|<span>&#9989;</span> \*|  |  |  |
-| Haskell |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#x274c;</span>|  |  |
-| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
-| Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| Lisp |<span>&#9989;</span>|  |  |  |  |  |
-| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |
-| Nim |<span>&#9989;</span>|  |  |  ex|  |  |
-| Nix |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
-| Ocaml |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
-| Odin |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| OpenSCAD |  |  |  |  |  |  |
-| Perl |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |
-| PHP |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
-| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| R |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| Ruby |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#9989;</span>|  |  |
-| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |
-| Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |
-| SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |
-| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#x274c;</span>|  |  |
-| TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
-| Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
-| Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |
-| V | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |
+| Bash |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
+| C# |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
+| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|<span>&#9989;</span>|
+| Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |  |
+| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Erlang |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| F# |  |  |  |  |  |  |  |
+| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| Groovy |  |<span>&#9989;</span> \*|<span>&#9989;</span> \*|  |  |  |  |
+| Haskell |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#x274c;</span>|  |  |  |
+| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
+| Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Lisp |<span>&#9989;</span>|  |  |  |  |  |  |
+| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |
+| Nim |<span>&#9989;</span>|  |  |  |  |  |  |
+| Nix |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
+| Ocaml |  |  |  |<span>&#9989;</span>|  |  |  |
+| Odin |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| OpenSCAD |  |  |  |  |  |  |  |
+| Perl |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
+| PHP |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
+| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| R |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Ruby |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#9989;</span>|  |  |  |
+| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |
+| Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
+| SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
+| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#x274c;</span>|  |  |  |
+| TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |  |
+| Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |  |
+| V | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
+| XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  |  |  |  |
 
 `*`: there are still some problems to solve
 
@@ -171,4 +217,3 @@ To enable intellisense (LSP server, linter) support for any of the languages in 
 - https://github.com/jgmdev/lite-xl-threads
 - https://github.com/vincens2005/lite-formatters
 - And many more...
-
