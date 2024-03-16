@@ -48,7 +48,7 @@
 
 ### Erlang
 
-`paru -S erlang-ls` WIP
+`paru -S erlang-ls` WIP: package still not in the AUR
 
 ### F#
 
@@ -82,13 +82,17 @@
 
 ### Javascript
 
+`paru -S typescript-language-server`
+
 ### Julia
 
 `sudo pacman -S julia`
 
 `julia`
 
-`]add LanguageServer`
+`]`
+
+`add LanguageServer`
 
 ### Kotlin
 
@@ -103,12 +107,11 @@
 `lpm install lsp_lua`
 
 ### Nim
-
-`paru -S choosenim-bin`
-
-`choosenim stable`
-
-`nimble install nimlsp`
+```sh
+paru -S choosenim-bin
+choosenim stable
+nimble install nimlsp
+```
 
 ### Nix
 
@@ -122,11 +125,17 @@ opam install dune
 opam install ocaml-format ocaml-lsp-server
 ```
 
+WIP
+
 ### Odin
 
 `paru -S odinls`
 
 ### OpenSCAD
+
+`sudo pacman -S openscad`
+
+`paru -S openscad-lsp`
 
 ### Perl
 
@@ -147,38 +156,28 @@ opam install ocaml-format ocaml-lsp-server
 
 ### Ruby
 
-Install `rvm` by following [official guide](https://wiki.archlinux.org/title/RVM).
+Install `rvm` by following the [official guide](https://wiki.archlinux.org/title/RVM).
 
 Install the latest ruby version:
-```sh
-sudo rvm install 1.9.2
-```
+`sudo rvm install 1.9.2`
 
 Install the `ruby-lsp` LSP server as a gem:
-```sh
-gem install ruby-lsp
-```
+`gem install ruby-lsp`
 
 ### Rust
 
-`lpm install lsp_rust`
+`sudo pacman -S rustup`
 
 ### Scala
 
 Install the language and necessary dependencies for `metals`:
-```sh
-paru -S jdk17-openjdk scala scala-docs scala-sources
-```
+`paru -S jdk17-openjdk scala scala-docs scala-sources`
 
 Set Java 17 as the default version:
-```sh
-sudo archlinux-java set java-17-openjdk
-```
+`sudo archlinux-java set java-17-openjdk`
 
 Install the `metals` LSP server:
-```sh
-paru -S metals
-```
+`paru -S metals`
 
 ### SQL
 
@@ -192,7 +191,9 @@ paru -S metals
 
 ### TeX
 
-`lpm install lsp_tex`
+`sudo pacman -S texlive-most`
+
+`paru -S texlab-bin`
 
 `sudo pacman -S texlive-binextra`
 
@@ -211,6 +212,10 @@ paru -S metals
 
 `paru -S lemminx`
 
+### YAML
+
+`sudo pacman -S yaml-language-server`
+
 ### Zig
 
-`lpm install lsp_zig`
+`sudo pacman -S zig zls`
