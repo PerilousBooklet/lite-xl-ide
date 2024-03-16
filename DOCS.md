@@ -1,7 +1,4 @@
-# Lite XL IDE Documentation
-Note: this guide is specific to Arch Linux only.
-
-## Adding language-specific intellisense support
+## Manual LSP servers install on Arch Linux
 
 ### Arduino
 
@@ -99,11 +96,19 @@ Note: this guide is specific to Arch Linux only.
 
 ### Lisp
 
+`sudo pacman -S roswell`
+
 ### Lua
 
 `lpm install lsp_lua`
 
 ### Nim
+
+`paru -S choosenim-bin`
+
+`choosenim stable`
+
+`nimble install nimlsp`
 
 ### Nix
 

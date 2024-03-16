@@ -70,7 +70,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 ## Features
 
 - [x] Syntax highlighting for 70+ languages
-- [x] Intellisense support for 40+ languages
+- [x] Intellisense support for 40+ languages (WIP)
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -94,10 +94,9 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 - [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Project-wide refactoring
 - [ ] Project template manager
-- [ ] Paste converting from JSON to Typescript
 - [ ] Tmux integration
 - [ ] Docker integration
-- [ ] Gradle tasks dedicated commandview
+- [ ] Github Copilot integration
 
 ## Language support status
 
@@ -107,51 +106,51 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
 | Arduino |  |  |  |  |  |  |  |
-| Bash |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
-| C# |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
-| C/C++ |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |<span>&#9989;</span>|<span>&#9989;</span>|
-| Clojure |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
-| Crystal |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |  |
-| CSS |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
+| Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
+| C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
+| Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Crystal | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
+| CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
-| Dart |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  | <span>&#9989;</span> |  |  |
-| Elixir |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
-| Elm |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| Erlang |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
+| Dart | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
+| Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Erlang |  | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | F# |  |  |  |  |  |  |  |
-| GDScript |<span>&#9989;</span>|  |  |  | <span>&#9989;</span> |  |  |
-| Go |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| Groovy |  |<span>&#9989;</span> \*|<span>&#9989;</span> \*|  |  |  |  |
-| Haskell |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
-| HTML |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| Java |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Javascript |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| JSON |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#x274c;</span>|  |  |  |
-| Julia |<span>&#9989;</span>|  |  |<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| Kotlin |  |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Lisp |<span>&#9989;</span>|  |  |  |  |  |  |
-| Lua |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| Nim |<span>&#9989;</span>|  |  |  |  |  |  |
-| Nix |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
-| Ocaml |  |  |  |<span>&#9989;</span>|  |  |  |
-| Odin |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
+| GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
+| Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Groovy |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
+| HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
+| Julia | <span>&#9989;</span> |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Kotlin |  | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Lisp | <span>&#9989;</span> |  |  |  |  |  |  |
+| Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Nim | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
+| Ocaml |  |  |  | <span>&#9989;</span> |  |  |  |
+| Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD |  |  |  |  |  |  |  |
-| Perl |<span>&#9989;</span>|<span>&#9989;</span>|  |<span>&#9989;</span>|  |  |  |
-| PHP |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|<span>&#9989;</span>|  |  |  |
-| Python |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| R |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Ruby |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#9989;</span>|  |  |  |
-| Rust |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>| <span>&#9989;</span> |  |  |
-| Scala |<span>&#9989;</span>| <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|  |  |  |
-| SQL |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Svelte |<span>&#9989;</span>|  |  |<span>&#9989;</span>|  |  |  |
-| Tailwind |<span>&#9989;</span>|<span>&#9989;</span> \*|  |<span>&#x274c;</span>|  |  |  |
-| TeX |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |
-| Typescript |<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |  |
-| Typst |  |<span>&#9989;</span> \*|<span>&#9989;</span>|  |  |  |  |
+| Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
+| PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
+| Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Ruby | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> |  |  |  |
+| Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
+| Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* |  |<span>&#x274c;</span>|  |  |  |
+| TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
+| Typst |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
-| XML |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span>|  |  |  |  |
-| Zig |<span>&#9989;</span>|<span>&#9989;</span>|<span>&#9989;</span> ex|  | <span>&#9989;</span> |  |  |
+| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
 
@@ -164,7 +163,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Arduino |  |  |  |
 | Bash |  |  |  |
 | C# |  |  |  |
-| C/C++ |<span>&#9989;</span>| `lsp_c` | `ide` |
+| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide` |
 | Clojure |   |  |  |
 | Crystal |  |  |  |
 | CSS |  |  |  |
@@ -182,7 +181,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Julia |  |  |  |
 | Kotlin |  |  |  |
 | Lisp |  |  |  |
-| Lua |<span>&#9989;</span>| `lsp_lua` |  |
+| Lua | <span>&#9989;</span> | `lsp_lua` |  |
 | Nim |  |  |  |
 | Nix |  |  |  |
 | Ocaml |  |  |  |
@@ -193,16 +192,16 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Python | <span>&#9989;</span> | `lsp_python` |  |
 | R |  |  |  |
 | Ruby |  |  |  |
-| Rust |<span>&#9989;</span>| `lsp_rust` |  |
+| Rust | <span>&#9989;</span> | `lsp_rust` |  |
 | Scala |  |  |  |
 | SQL |  |  |  |
 | Svelte |  |  |  |
 | Tailwind |  |  |  |
-| TeX |<span>&#9989;</span>| `lsp_tex` |  |
+| TeX | <span>&#9989;</span> | `lsp_tex` |  |
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
 | Typst |  |  |  |
 | XML |  |  |  |
-| Zig |<span>&#9989;</span>| `lsp_zig` |  |
+| Zig | <span>&#9989;</span> | `lsp_zig` |  |
 
 ## Credits
 
