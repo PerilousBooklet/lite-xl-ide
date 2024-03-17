@@ -61,7 +61,7 @@ lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a fi
 lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
 ```
 
-Add code snippets by downloading [these](https://github.com/rafamadriz/friendly-snippets)JSON file into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
+Add code snippets by downloading [these](https://github.com/rafamadriz/friendly-snippets) JSON files into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
 ```lua
 local lsp_snippets = require \"plugins.lsp_snippets\"
 lsp_snippets.add_paths {'plugins/snippets/json'}
@@ -130,7 +130,7 @@ lsp_snippets.add_paths {'plugins/snippets/json'}
 | Kotlin |  | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Lisp | <span>&#9989;</span> |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Nim | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
 | Ocaml |  |  |  | <span>&#9989;</span> |  |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
