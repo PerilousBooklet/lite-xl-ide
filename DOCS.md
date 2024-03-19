@@ -195,7 +195,7 @@ Install the `metals` LSP server:
 
 `paru -S texlab-bin`
 
-`sudo pacman -S texlive-binextra`
+`sudo pacman -S texlive-binextra perl-yaml-tiny perl-file-homedir`
 
 ### Typescript
 
