@@ -181,7 +181,7 @@ Install the `metals` LSP server:
 
 ### SQL
 
-`paru -S sql-language-server`
+`paru -S sql-language-server sql-formatter`
 
 ### Svelte
 
