@@ -109,6 +109,7 @@ config.format_on_save = true
 - [ ] Tmux integration
 - [ ] Docker integration
 - [ ] Github Copilot integration
+- [ ] Markdown renderer integration
 
 ## Language support status
 
