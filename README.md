@@ -189,7 +189,7 @@ config.format_on_save = true
 | Haskell |  |  |  |
 | HTML |  |  |  |
 | Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
-| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_typescript` |
+| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
 | JSON |  |  |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
