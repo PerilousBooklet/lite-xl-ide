@@ -145,7 +145,7 @@ config.format_on_save = true
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
-| Ocaml |  |  |  | <span>&#9989;</span> |  |  |  |
+| Ocaml |  |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD |  |  |  |  |  |  |  |
 | Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
@@ -157,7 +157,7 @@ config.format_on_save = true
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
-| Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* |  |<span>&#x274c;</span>|  |  |  |
+| Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | Typst |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
@@ -176,7 +176,7 @@ config.format_on_save = true
 | Arduino |  |  |  |
 | Bash |  |  |  |
 | C# |  |  |  |
-| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide` |
+| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
 | Clojure |   |  |  |
 | Crystal |  |  |  |
 | CSS |  |  |  |
@@ -188,13 +188,13 @@ config.format_on_save = true
 | Groovy |  |  |  |
 | Haskell |  |  |  |
 | HTML |  |  |  |
-| Java | <span>&#9989;</span> | `lsp_java` |  |
-| Javascript | <span>&#9989;</span> | `lsp_typescript` |  |
+| Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
+| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_typescript` |
 | JSON |  |  |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
 | Lisp |  |  |  |
-| Lua | <span>&#9989;</span> | `lsp_lua` |  |
+| Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
 | Nim |  |  |  |
 | Nix |  |  |  |
 | Ocaml |  |  |  |
@@ -202,19 +202,19 @@ config.format_on_save = true
 | OpenSCAD |  |  |  |
 | Perl |  |  |  |
 | PHP |  |  |  |
-| Python | <span>&#9989;</span> | `lsp_python` |  |
+| Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
 | R |  |  |  |
 | Ruby |  |  |  |
-| Rust | <span>&#9989;</span> | `lsp_rust` |  |
+| Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
 | Scala |  |  |  |
 | SQL |  |  |  |
 | Svelte |  |  |  |
 | Tailwind |  |  |  |
-| TeX | <span>&#9989;</span> | `lsp_tex` |  |
+| TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
 | Typst |  |  |  |
 | XML |  |  |  |
-| Zig | <span>&#9989;</span> | `lsp_zig` |  |
+| Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
 
 ## Credits
 

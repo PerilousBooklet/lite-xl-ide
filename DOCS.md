@@ -122,10 +122,10 @@ sudo pacman -S ocaml opam
 opam init
 opam install core core_bench utop
 opam install dune
-opam install ocaml-format ocaml-lsp-server
+opam install ocaml-lsp-server
 ```
 
-WIP
+`paru -S ocaml-ocp-indent`
 
 ### Odin
 
