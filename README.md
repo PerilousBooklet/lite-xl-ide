@@ -122,7 +122,7 @@ config.format_on_save = true
 | Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
-| Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Crystal | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
 | CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
@@ -190,7 +190,7 @@ config.format_on_save = true
 | HTML |  |  |  |
 | Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
 | Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
-| JSON |  |  |  |
+| JSON | <span>&#9989;</span> | `lsp_json` |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
 | Lisp |  |  |  |
@@ -214,6 +214,7 @@ config.format_on_save = true
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
 | Typst |  |  |  |
 | XML |  |  |  |
+| YAML | <span>&#9989;</span> | `lsp_yaml` |  |
 | Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
 
 ## Credits
