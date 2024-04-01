@@ -1,4 +1,4 @@
-## Manual LSP servers install on Arch Linux
+## Manual intellisense install for Arch Linux
 
 ### Arduino
 
@@ -15,7 +15,7 @@
 
 ### C/C++
 
-`lpm install lsp_c`
+`sudo pacman -S clang`
 
 ### Clojure
 
@@ -104,7 +104,7 @@
 
 ### Lua
 
-`lpm install lsp_lua`
+`sudo pacman lua-language-server luacheck`
 
 ### Nim
 ```sh
