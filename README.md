@@ -159,6 +159,7 @@ config.format_on_save = true
 | Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
 | Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | Typst |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
