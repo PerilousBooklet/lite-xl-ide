@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Documentation for a set of plugins and configuration files that aims to turn `Lite XL` into a proper IDE.
+Documentation for a set of plugins and configuration files that aims to turn [Lite XL](https://lite-xl.com/) into a proper IDE.
 
 (This project is still WIP.)
 
