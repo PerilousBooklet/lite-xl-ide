@@ -14,6 +14,9 @@ This way, if I wanted to install and IDE setup for Java or Python, I could just 
 
 With such a command, `lpm` (Lite XL's own package manager') would take care of installing executable files for LSP servers, linters, formatters and IDE-related plugins.
 
+One thing to keep in mind though, is that, at the moment, the ideal distribution to use a Lite XL IDE manual setup on is Arch Linux (or a derivative), because all the lsp
+servers, linters and formatters have a correspondent arch package, either in the official repo or in the AUR.
+
 ## Installation
 
 ### Install colors and languages
@@ -32,7 +35,6 @@ lpm install devicons
 ### Install the basic IDE plugins
 
 ```sh
-lpm add https://github.com/PerilousBooklet/lite-xl-ide-adam.git
 lpm install ide
 ```
 
@@ -52,7 +54,7 @@ local lsp = require "plugins.lsp"
 lspconfig.clangd.setup()
 ```
 
-Do the same by adding an appropriate `lspconfig.lspname.setup()` instruction for every desired language.
+Do the same by adding an appropriate `lspconfig.lsp_name.setup()` instruction for every desired language.
 
 The LSP servers names can be found in [here](https://github.com/lite-xl/lite-xl-lsp/blob/master/config.lua).
 
@@ -83,7 +85,7 @@ config.format_on_save = true
 ## Features
 
 - [x] Syntax highlighting for 70+ languages
-- [x] Intellisense support for 40+ languages (WIP)
+- [x] Intellisense support for 30+ languages (WIP)
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search

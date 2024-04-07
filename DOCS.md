@@ -72,6 +72,8 @@
 
 `sudo pacman -S vscode-html-languageserver`
 
+`paru -S emmet-language-server`
+
 ### Java
 
 `paru -S jdtls`
