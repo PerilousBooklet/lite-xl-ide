@@ -161,13 +161,13 @@ config.format_on_save = true
 | Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
 | Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | Typst |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
-| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
-| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
 

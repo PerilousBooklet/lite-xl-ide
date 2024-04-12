@@ -127,15 +127,13 @@ opam install dune
 opam install ocaml-lsp-server
 ```
 
-`paru -S ocaml-ocp-indent`
+`paru -S ocaml-lsp-git ocaml-ocp-indent`
 
 ### Odin
 
 `paru -S odinls`
 
 ### OpenSCAD
-
-`sudo pacman -S openscad`
 
 `paru -S openscad-lsp`
 
