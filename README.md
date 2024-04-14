@@ -85,7 +85,7 @@ config.format_on_save = true
 ## Features
 
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 40+ languages
+- [x] Intellisense support for 40+ languages (WIP)
 - [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -99,15 +99,15 @@ config.format_on_save = true
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Builder integration
 - [x] Debugger integration
-- [ ] Foldable code blocks
-- [ ] Horizontal scrolling for project treeview
-- [ ] Document symbols treeview
-- [ ] Automatic textEdit for in-file dependency reference
-- [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen
-- [ ] Support goto-definition/implementation for decompiled libraries (es. java)
+- [ ] Foldable code blocks (WIP)
+- [ ] Horizontal scrolling for project treeview (WIP)
+- [ ] Document symbols treeview (TODO)
+- [ ] Automatic textEdit for in-file dependency reference (WIP)
+- [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen (WIP)
+- [ ] Support goto-definition/implementation for decompiled libraries (es. java) (TODO)
 - [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
-- [ ] Project-wide refactoring
-- [ ] Project template manager
+- [ ] Project-wide refactoring (TODO)
+- [ ] Project template manager (TODO)
 - [ ] Tmux integration
 - [ ] Docker integration
 - [ ] Github Copilot integration
@@ -141,7 +141,7 @@ config.format_on_save = true
 | Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
-| Julia | <span>&#9989;</span> |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin |  | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Lisp | <span>&#9989;</span> |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |

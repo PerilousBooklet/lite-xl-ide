@@ -52,7 +52,9 @@
 
 ### F#
 
-`sudo pacman -S dotnet-sdk`
+`sudo pacman -S dotnet-sdk-6.0`
+
+?
 
 `paru -S fsharp-language-server`
 
