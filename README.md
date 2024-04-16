@@ -99,19 +99,19 @@ config.format_on_save = true
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Builder integration
 - [x] Debugger integration
+- [x] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Foldable code blocks (WIP)
 - [ ] Horizontal scrolling for project treeview (WIP)
 - [ ] Document symbols treeview (TODO)
 - [ ] Automatic textEdit for in-file dependency reference (WIP)
 - [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen (WIP)
 - [ ] Support goto-definition/implementation for decompiled libraries (es. java) (TODO)
-- [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Project-wide refactoring (TODO)
 - [ ] Project template manager (TODO)
 - [ ] Tmux integration
 - [ ] Docker integration
-- [ ] Github Copilot integration
-- [ ] Markdown renderer integration
+- [ ] Github Copilot integration (WIP)
+- [ ] Markdown renderer integration (WIP)
 
 ## Language support status
 
