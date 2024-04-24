@@ -99,13 +99,13 @@ config.format_on_save = true
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Builder integration
 - [x] Debugger integration
-- [x] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Foldable code blocks (WIP)
 - [ ] Horizontal scrolling for project treeview (WIP)
 - [ ] Document symbols treeview (TODO)
 - [ ] Automatic textEdit for in-file dependency reference (WIP)
 - [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen (WIP)
 - [ ] Support goto-definition/implementation for decompiled libraries (es. java) (TODO)
+- [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
 - [ ] Project-wide refactoring (TODO)
 - [ ] Project template manager (TODO)
 - [ ] Tmux integration
@@ -120,7 +120,7 @@ config.format_on_save = true
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
-| Arduino |  |  |  |  |  |  |  |
+| Arduino | <span>&#9989;</span> |  |  |  |  |  |  |
 | Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
@@ -133,23 +133,24 @@ config.format_on_save = true
 | Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Erlang |  | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
 | F# |  |  |  |  |  |  |  |
+| Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
 | Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Groovy |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
 | Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Kotlin |  | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Lisp | <span>&#9989;</span> |  |  |  |  |  |  |
+| Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Lisp |  |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
 | Ocaml |  |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| OpenSCAD |  |  |  |  |  |  |  |
+| OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
 | Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
 | PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
 | Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
@@ -163,8 +164,9 @@ config.format_on_save = true
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
-| Typst |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Typst | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
+| Vala |  |  |  |  |  |  |  |
 | XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
 | YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |

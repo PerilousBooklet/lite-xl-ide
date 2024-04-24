@@ -210,6 +210,12 @@ Install the `metals` LSP server:
 ### V
 `paru -S v-analyzer-bin`
 
+### Vala
+
+`sudo pacman -S vala`
+
+`paru -S vala-language-server`
+
 ### XML
 
 `paru -S lemminx`
