@@ -83,35 +83,39 @@ config.format_on_save = true
 ```
 
 ## Features
-
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 40+ languages (WIP)
-- [x] Custom devicons plugin for the project treeview (uses fontello and is based on the svg files from the nonicons plugin)
+- [x] Intellisense support for 40+ languages
+- [x] Custom project treeview devicons
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
 - [x] Project-wide filename search
-- [x] Integrated terminal
 - [x] Multi-cursor editing
 - [x] Single/multi-line commenting with shortcuts
 - [x] Go to line n command
 - [x] Todo tree view
-- [x] Git integration
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
+- [x] Integrated terminal
+- [x] Git integration
 - [x] Builder integration
 - [x] Debugger integration
-- [ ] Foldable code blocks (WIP)
-- [ ] Horizontal scrolling for project treeview (WIP)
-- [ ] Document symbols treeview (TODO)
-- [ ] Automatic textEdit for in-file dependency reference (WIP)
-- [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen (WIP)
-- [ ] Support goto-definition/implementation for decompiled libraries (es. java) (TODO)
-- [ ] Simultaneous tag rename <!-- WIP: tex works, html and xml are missing -->
-- [ ] Project-wide refactoring (TODO)
-- [ ] Project template manager (TODO)
+- [x] Markdown support via [ghmarkdown](https://github.com/lite-xl/lite-xl-plugins/blob/master/plugins/ghmarkdown.lua) or [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
+
+### WIP
+- [ ] Foldable code blocks
+- [ ] Horizontal scrolling for project treeview
+- [ ] Automatic textEdit for in-file dependency reference
+- [ ] Github Copilot integration
+- [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen
+- [ ] Markdown renderer integration
+
+### TODO
+- [ ] Document symbols treeview
+- [ ] Support goto-definition/implementation for decompiled libraries (es. java, minecraft mods)
+- [ ] Simultaneous tag rename
+- [ ] Project-wide refactoring
+- [ ] Project template manager
 - [ ] Tmux integration
 - [ ] Docker integration
-- [ ] Github Copilot integration (WIP)
-- [ ] Markdown renderer integration (WIP)
 
 ## Language support status
 
@@ -144,7 +148,6 @@ config.format_on_save = true
 | JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
 | Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Lisp |  |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
