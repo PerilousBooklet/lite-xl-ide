@@ -71,7 +71,7 @@ lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a fi
 lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
 ```
 
-Add code snippets by downloading [these](https://github.com/rafamadriz/friendly-snippets) JSON files into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
+Add code snippets by downloading the JSON files from this repo's `snippets` folder into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
 ```lua
 local lsp_snippets = require \"plugins.lsp_snippets\"
 lsp_snippets.add_paths {'plugins/snippets/json'}
@@ -169,7 +169,7 @@ config.format_on_save = true
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | Typst | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
-| Vala |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Vala |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
 | YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |

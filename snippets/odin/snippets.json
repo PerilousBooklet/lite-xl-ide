@@ -1,0 +1,445 @@
+{
+	"hellope": {
+		"prefix": "hellope",
+		"body": [
+			"package main",
+			"",
+			"import \"core:fmt\"",
+			"",
+			"main :: proc() {",
+			"\tfmt.println(\"Hellope!\");$0",
+			"}"
+		],
+		"description": "'Hello World' in Odin"
+	},
+
+	"main": {
+		"prefix": "main",
+		"body": [
+			"main :: proc() {",
+			"\t$0",
+			"}"
+		],
+		"description": "main()"
+	},
+
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for ${1:i} := ${2:0}; ${1:i} < ${3:n}; $1 += 1 {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert 'for' loop"
+	},
+
+	"for do": {
+		"prefix": "for do",
+		"body": [
+			"for ${1:i} := ${2:0}; ${1:i} < ${3:n}; i += 1 do $0"
+		],
+		"description": "Insert inline 'for' loop"
+	},
+
+	"for while": {
+		"prefix": "for while",
+		"body": [
+			"${1:i} := ${2:0};",
+			"for ${1:i} < ${3:n} {",
+			"\t$0",
+			"\t${1:i} += 1;",
+			"}"
+		],
+		"description": "Insert 'while' equivalent 'for' loop"
+	},
+
+	"for range": {
+		"prefix": "for range",
+		"body": [
+			"for ${1:i} in ${2:array} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert range 'for' loop"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ${1:condition} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert 'if' statement"
+	},
+
+	"if do": {
+		"prefix": "if do",
+		"body": [
+			"if ${1:condition} do $0"
+		],
+		"description": "Insert 'if ... do' statement"
+	},
+
+	"ifel": {
+		"prefix": "ifel",
+		"body": [
+			"if ${1:condition} {",
+			"\t$2",
+			"} else {",
+			"\t$3",
+			"}"
+		],
+		"description": "Insert 'if-else' statement"
+	},
+
+	"ifelif": {
+		"prefix": "ifelif",
+		"body": [
+			"if ${1:condition 1} {",
+			"\t$3",
+			"} else if ${2:condition 2} {",
+			"\t$4",
+			"} else {",
+			"\t$5",
+			"}"
+		],
+		"description": "Insert 'if', 'else if', 'else' statement"
+	},
+
+	"switch": {
+		"prefix": "switch",
+		"body": [
+			"switch ${1:variable} {",
+			"case ${2:value}:",
+			"\t$3",
+			"case: // default",
+			"\t$4",
+			"}"
+		],
+		"description": "Insert 'switch' statement"
+	},
+
+	"switch true": {
+		"prefix": "switch true",
+		"body": [
+			"switch {",
+			"case ${1:condition}:",
+			"\t$2",
+			"case: // default",
+			"\t$3",
+			"}"
+		],
+		"description": "Insert 'switch true' statement"
+	},
+
+	"when": {
+		"prefix": "when",
+		"body": [
+			"when $1 {",
+			"\t$2",
+			"}"
+		],
+		"description": "Insert 'When' statement"
+	},
+
+	"when el": {
+		"prefix": "when el",
+		"body": [
+			"when $1 {",
+			"\t$2",
+			"} else {",
+			"\t$3",
+			"}"
+		],
+		"description": "Insert 'When-else' statement"
+	},
+
+	"when el when": {
+		"prefix": "when el when",
+		"body": [
+			"when $1 {",
+			"\t$3",
+			"} else when $2 {",
+			"\t$4",
+			"} else {",
+			"\t$5",
+			"}"
+		],
+		"description": "Insert 'when', 'else when', 'else' statement"
+	},
+
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"${1:name} :: struct {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert 'struct'"
+	},
+
+	"println": {
+		"prefix": "println",
+		"body": [
+			"fmt.println($1)$0"
+		],
+		"description": "Insert 'println'"
+	},
+
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			"fmt.printf(\"$1\", $2)$0"
+		],
+		"description": "Insert formatted print"
+	},
+
+	"package": {
+		"prefix": "package",
+		"body": [
+			"package $0"
+		],
+		"description": "Include a package"
+	},
+
+	"import": {
+		"prefix": "import",
+		"body": [
+			"import $0"
+		],
+		"description": "Add an import"
+	},
+
+	"foreign": {
+		"prefix": "foreign",
+		"body": [
+			"foreign $0"
+		],
+		"description": "foreign"
+	},
+
+	"defer": {
+		"prefix": "defer",
+		"body": [
+			"defer $0"
+		],
+		"description": "defer"
+	},
+
+	"return": {
+		"prefix": "return",
+		"body": [
+			"return $0"
+		],
+		"description": "return"
+	},
+
+	"in": {
+		"prefix": "in",
+		"body": [
+			"in $0"
+		],
+		"description": "in"
+	},
+
+	"notin": {
+		"prefix": "notin",
+		"body": [
+			"notin $0"
+		],
+		"description": "notin"
+	},
+
+	"do": {
+		"prefix": "do",
+		"body": [
+			"do $0"
+		],
+		"description": "do"
+	},
+
+	"break": {
+		"prefix": "break",
+		"body": [
+			"break $0"
+		],
+		"description": "break"
+	},
+
+	"continue": {
+		"prefix": "continue",
+		"body": [
+			"continue $0"
+		],
+		"description": "continue"
+	},
+
+	"fallthrough": {
+		"prefix": "fallthrough",
+		"body": [
+			"fallthrough $0"
+		],
+		"description": "fallthrough"
+	},
+
+	"proc": {
+		"prefix": "proc",
+		"body": [
+			"proc $0"
+		],
+		"description": "proc"
+	},
+
+	"union": {
+		"prefix": "union",
+		"body": [
+			"union $0"
+		],
+		"description": "union"
+	},
+
+	"enum": {
+		"prefix": "enum",
+		"body": [
+			"enum $0"
+		],
+		"description": "enum"
+	},
+
+	"bit_field": {
+		"prefix": "bit_field",
+		"body": [
+			"bit_field $0"
+		],
+		"description": "bit_field"
+	},
+
+	"bit_set": {
+		"prefix": "bit_set",
+		"body": [
+			"bit_set $0"
+		],
+		"description": "bit_set"
+	},
+
+	"map": {
+		"prefix": "map",
+		"body": [
+			"map $0"
+		],
+		"description": "map"
+	},
+
+	"dynamic": {
+		"prefix": "dynamic",
+		"body": [
+			"dynamic $0"
+		],
+		"description": "dynamic"
+	},
+
+	"cast": {
+		"prefix": "cast",
+		"body": [
+			"cast $0"
+		],
+		"description": "cast"
+	},
+
+	"auto_cast": {
+		"prefix": "auto_cast",
+		"body": [
+			"auto_cast $0"
+		],
+		"description": "auto_cast"
+	},
+
+	"transmute": {
+		"prefix": "transmute",
+		"body": [
+			"transmute $0"
+		],
+		"description": "transmute"
+	},
+
+	"using": {
+		"prefix": "using",
+		"body": [
+			"using $0"
+		],
+		"description": "using"
+	},
+
+	"inline": {
+		"prefix": "inline",
+		"body": [
+			"inline $0"
+		],
+		"description": "inline"
+	},
+
+	"no_inline": {
+		"prefix": "no_inline",
+		"body": [
+			"no_inline $0"
+		],
+		"description": "no_inline"
+	},
+
+	"context": {
+		"prefix": "context",
+		"body": [
+			"context $0"
+		],
+		"description": "context"
+	},
+
+	"size_of": {
+		"prefix": "size_of",
+		"body": [
+			"size_of $0"
+		],
+		"description": "size_of"
+	},
+
+	"align_of": {
+		"prefix": "align_of",
+		"body": [
+			"align_of $0"
+		],
+		"description": "align_of"
+	},
+
+	"offset_of": {
+		"prefix": "offset_of",
+		"body": [
+			"offset_of $0"
+		],
+		"description": "offset_of"
+	},
+
+	"type_of": {
+		"prefix": "type_of",
+		"body": [
+			"type_of $0"
+		],
+		"description": "type_of"
+	},
+
+	"distinct": {
+		"prefix": "distinct",
+		"body": [
+			"distinct $0"
+		],
+		"description": "distinct"
+	},
+
+	"opaque": {
+		"prefix": "opaque ",
+		"body": [
+			"opaque $0"
+		],
+		"description": "opaque"
+	}
+}

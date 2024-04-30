@@ -1,0 +1,67 @@
+{
+    "if": {
+        "prefix": ["g.if", "if"],
+        "body": [
+            "<g:if test=\"${ $1 }\">",
+            "   $2",
+            "</g:if>"
+        ],
+        "description": "if .. end"
+    },
+    "else": {
+        "prefix": ["g.else", "else"],
+        "body": [
+            "<g:else>",
+            "   $2",
+            "</g:else>"
+        ],
+        "description": "else"
+    },
+    "elsif": {
+        "prefix": ["g.elseif", "elseif"],
+        "body": [
+            "<g:elseif test=\"${ ${1} }\">",
+            "   $2",
+            "</g:elseif>"
+        ],
+        "description": "elsif"
+    },
+
+    "each": {
+        "prefix": ["g.each", "each"],
+        "body": [
+            "<g:each var=\"${1:item}\" in=\"${ ${2:items} }\">",
+            "   $3",
+            "</g:each>"
+        ],
+        "description": "each do"
+    },
+    "render": {
+        "prefix": ["g.render", "render"],
+        "body": [
+            "<g:render template=\"$1\" model=\"['$2':$2]\" />"
+        ],
+        "description": "render a template"
+    },
+    "import": {
+        "prefix": ["g.import", "import"],
+        "body": [
+            "<%@ page import=\"$1\" %>"
+        ],
+        "description": "import"
+    },
+    "service": {
+        "prefix": ["g.service", "service"],
+        "body": [
+            "<g:set var=\"$1\" bean=\"$1\"/>"
+        ],
+        "description": "inject a service"
+    },
+    "set": {
+        "prefix": ["g.set", "set"],
+        "body": [
+            "<g:set var=\"$1\" value=\"$2\"/>"
+        ],
+        "description": "set a var"
+    }
+}
