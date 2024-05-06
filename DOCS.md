@@ -4,6 +4,10 @@
 
 `sudo pacman -S arduino-language-server`
 
+### Assembly x86_64
+
+`paru -S asm-lsp`
+
 ### Bash
 
 `sudo pacman -S bash-language-server shellcheck`

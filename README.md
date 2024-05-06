@@ -104,9 +104,10 @@ config.format_on_save = true
 - [ ] Foldable code blocks
 - [ ] Horizontal scrolling for project treeview
 - [ ] Automatic textEdit for in-file dependency reference
+- [ ] Ligatures support
 - [ ] Github Copilot integration
 - [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen
-- [ ] Markdown renderer integration
+- [ ] Markdown renderer integration (`mdpreview` plugin + `canvas` module)
 
 ### TODO
 - [ ] Document symbols treeview
