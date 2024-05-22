@@ -17,6 +17,14 @@ With such a command, `lpm` (Lite XL's own package manager') would take care of i
 One thing to keep in mind though, is that, at the moment, the ideal distribution to use a Lite XL IDE manual setup on is Arch Linux (or a derivative), because all the lsp
 servers, linters and formatters have a correspondent arch package, either in the official repo or in the AUR.
 
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Features](#features)
+3. [Language Support Status](#language-support-status)
+4. [LSP Bundle Support Status](#lsp-bundle-support-status)
+5. [Credits](#credits)
+
 ## Installation
 
 ### Install colors and languages
@@ -179,7 +187,7 @@ config.format_on_save = true
 
 `ex`: external linter
 
-## LSP bundle support status
+## LSP Bundle support status
 
 | Language         | LSP Bundle | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
