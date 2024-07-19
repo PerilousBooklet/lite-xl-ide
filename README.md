@@ -74,14 +74,14 @@ Install an lsp bundle from [here](https://github.com/lite-xl/lite-xl-lsp-servers
 
 Enable automatic linting upon opening and saving a file by adding the following code inside of `USERDIR/init.lua`:
 ```lua
-local lintplus = require \"plugins.lintplus\"
+local lintplus = require "plugins.lintplus"
 lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a file
 lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
 ```
 
 Add code snippets by downloading the JSON files from this repo's `snippets` folder into a `USERDIR/plugins/snippets/json` folder and then writing the following code inside of `USERDIR/init.lua`:
 ```lua
-local lsp_snippets = require \"plugins.lsp_snippets\"
+local lsp_snippets = require "plugins.lsp_snippets"
 lsp_snippets.add_paths {'plugins/snippets/json'}
 ```
 
