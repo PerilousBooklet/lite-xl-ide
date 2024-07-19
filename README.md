@@ -14,7 +14,7 @@ This way, if I wanted to install an IDE setup for Java or Python, I could just r
 
 With such a command, `lpm` (Lite XL's own package manager') would take care of installing executable files for LSP servers, linters, formatters and IDE-related plugins.
 
-One thing to keep in mind though, is that, at the moment, the ideal distribution to use a Lite XL IDE manual setup on is Arch Linux (or a derivative), because all the lsp
+One thing to keep in mind though, is that at the moment the ideal distribution to use a Lite XL IDE manual setup on is Arch Linux (or a derivative), because all the lsp
 servers, linters and formatters have a correspondent arch package, either in the official repo or in the AUR.
 
 ## Table of Contents
