@@ -92,7 +92,7 @@ config.format_on_save = true
 
 ## Features
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 40+ languages
+- [x] Intellisense support for 40+ languages (WIP)
 - [x] Custom project treeview devicons
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -100,10 +100,10 @@ config.format_on_save = true
 - [x] Multi-cursor editing
 - [x] Single/multi-line commenting with shortcuts
 - [x] Go to line n command
-- [x] Todo tree view
+- [x] Todo treeview
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Integrated terminal
-- [x] Git integration
+- [x] Git integration (WIP)
 - [x] Builder integration
 - [x] Debugger integration
 - [x] Markdown support via [ghmarkdown](https://github.com/lite-xl/lite-xl-plugins/blob/master/plugins/ghmarkdown.lua) or [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
@@ -111,15 +111,14 @@ config.format_on_save = true
 ### WIP
 - [ ] Foldable code blocks
 - [ ] Horizontal scrolling for project treeview
-- [ ] Automatic textEdit for in-file dependency reference
 - [ ] Ligatures support
 - [ ] Github Copilot integration
 - [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen
-- [ ] Markdown renderer integration (`mdpreview` plugin + `canvas` module)
 
 ### TODO
 - [ ] Document symbols treeview
-- [ ] Support goto-definition/implementation for decompiled libraries (es. java, minecraft mods)
+- [ ] Support goto-definition/implementation for external libraries (es. java, minecraft mods)
+- [ ] External libraries item in project treeview
 - [ ] Simultaneous tag rename
 - [ ] Project-wide refactoring
 - [ ] Project template manager
