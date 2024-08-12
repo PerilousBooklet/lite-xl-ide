@@ -21,9 +21,10 @@ servers, linters and formatters have a correspondent arch package, either in the
 
 1. [Installation](#installation)
 2. [Features](#features)
-3. [Language Support Status](#language-support-status)
-4. [LSP Bundle Support Status](#lsp-bundle-support-status)
-5. [Credits](#credits)
+3. [Development Boards](#)
+4. [Language Support Status](#language-support-status)
+5. [LSP Bundle Support Status](#lsp-bundle-support-status)
+6. [Credits](#credits)
 
 ## Installation
 
@@ -124,6 +125,14 @@ config.format_on_save = true
 - [ ] Project template manager
 - [ ] Tmux integration
 - [ ] Docker integration
+
+## Development Boards
+
+- [Intellisense](https://github.com/users/PerilousBooklet/projects/6/views/1)
+- [Utilities](https://github.com/users/PerilousBooklet/projects/7/views/1)
+- [Build Integration](https://github.com/users/PerilousBooklet/projects/8/views/1)
+- [Debug Integration](https://github.com/users/PerilousBooklet/projects/9/views/1)
+- [Profiling Integration](https://github.com/users/PerilousBooklet/projects/10/views/1)
 
 ## Language support status
 
