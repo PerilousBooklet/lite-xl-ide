@@ -21,7 +21,7 @@ servers, linters and formatters have a correspondent arch package, either in the
 
 1. [Installation](#installation)
 2. [Features](#features)
-3. [Development Boards](#)
+3. [Development Boards](#development-boards)
 4. [Language Support Status](#language-support-status)
 5. [LSP Bundle Support Status](#lsp-bundle-support-status)
 6. [Credits](#credits)
@@ -93,7 +93,7 @@ config.format_on_save = true
 
 ## Features
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 40+ languages (WIP)
+- [x] Intellisense support for 50+ languages (WIP)
 - [x] Custom project treeview devicons
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -105,8 +105,8 @@ config.format_on_save = true
 - [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
 - [x] Integrated terminal
 - [x] Git integration (WIP)
-- [x] Builder integration
-- [x] Debugger integration
+- [x] Builder integration (WIP)
+- [x] Debugger integration (WIP)
 - [x] Markdown support via [ghmarkdown](https://github.com/lite-xl/lite-xl-plugins/blob/master/plugins/ghmarkdown.lua) or [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
 
 ### WIP
@@ -146,6 +146,7 @@ config.format_on_save = true
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
 | Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Cobol |  |  |  |  |  |  |  |
 | Crystal | <span>&#9989;</span> | <span>&#9989;</span> \* |  |  | <span>&#9989;</span> |  |  |
 | CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
@@ -165,6 +166,7 @@ config.format_on_save = true
 | JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
 | Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Lisp |  |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
@@ -180,6 +182,7 @@ config.format_on_save = true
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
+| System Verilog |  |  |  |  |  |  |  |
 | Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
