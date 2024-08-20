@@ -123,8 +123,6 @@ config.format_on_save = true
 - [ ] Simultaneous tag rename
 - [ ] Project-wide refactoring
 - [ ] Project template manager
-- [ ] Tmux integration
-- [ ] Docker integration
 
 ## Development Boards
 
