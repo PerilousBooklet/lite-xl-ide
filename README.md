@@ -1,4 +1,4 @@
-# Lite XL IDE setup
+# Lite XL IDE Setup
 
 ## Introduction
 
@@ -153,8 +153,8 @@ config.format_on_save = true
 | Dart | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
-| Erlang |  | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
-| F# |  |  |  |  |  |  |  |
+| Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
+| F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) |  |  |  |  |  |  |
 | Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
 | Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
@@ -170,7 +170,7 @@ config.format_on_save = true
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
-| Ocaml |  |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
 | Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
@@ -181,7 +181,7 @@ config.format_on_save = true
 | Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Svelte | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
+| Svelte | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/473) |  |  | <span>&#9989;</span> |  |  |  |
 | System Verilog |  |  |  |  |  |  |  |
 | Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
@@ -189,9 +189,9 @@ config.format_on_save = true
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | Typst | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
-| Vala |  | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
-| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
+| Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
+| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
 | YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
