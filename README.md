@@ -24,6 +24,8 @@ servers, linters and formatters have a correspondent arch package, either in the
 3. [Development Boards](#development-boards)
 4. [Language Support Status](#language-support-status)
 5. [LSP Bundle Support Status](#lsp-bundle-support-status)
+<!-- Titolo 1 e altre cose -->
+- [Titolo 1 e altre cose](#titolo-1-e-altre-cose)
 6. [Credits](#credits)
 
 ## Installation
@@ -55,21 +57,9 @@ or a language-specific ide metapackage: e.g. `lpm install ide_c` for C/C++ devel
 
 ### Install an LSP server
 
-#### Manual way
-
-Add the following code to `USERDIR/init.lua` (e.g. `lspconfig.clangd.setup()` enables the `clangd` LSP server for C/C++):
-```lua
-local lsp = require "plugins.lsp"
-lspconfig.clangd.setup()
-```
-
-Do the same by adding an appropriate `lspconfig.lsp_name.setup()` instruction for every desired language.
+[Installation Guide](https://takase.top/lite-xl-docs/user-guide/lsp/#manual-installation)
 
 The LSP servers names can be found in [here](https://github.com/lite-xl/lite-xl-lsp/blob/master/config.lua).
-
-#### Automated way
-
-Install an lsp bundle from [here](https://github.com/lite-xl/lite-xl-lsp-servers) (e.g. `lpm install lsp_c` for C/C++ development).
 
 ### Some other IDE setup steps
 
@@ -179,9 +169,7 @@ config.format_on_save = true
 | Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Svelte | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/473) |  |  | <span>&#9989;</span> |  |  |  |
 | System Verilog |  |  |  |  |  |  |  |
-| Tailwind | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#x274c;</span> |<span>&#x274c;</span>| <span>&#x274c;</span> |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
@@ -196,7 +184,7 @@ config.format_on_save = true
 
 `ex`: external linter
 
-## LSP Bundle support status
+## LSP bundle support status
 
 | Language         | LSP Bundle | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
@@ -235,8 +223,6 @@ config.format_on_save = true
 | Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
 | Scala |  |  |  |
 | SQL |  |  |  |
-| Svelte |  |  |  |
-| Tailwind |  |  |  |
 | TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
 | Typst |  |  |  |
