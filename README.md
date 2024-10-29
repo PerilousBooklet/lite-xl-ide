@@ -1,5 +1,9 @@
 # Lite XL IDE Setup
 
+> [!WARNING]
+> This repository is out-dated.
+> The information stored here has been moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
+
 ## Introduction
 
 Documentation for a set of plugins and configuration files that aims to turn [Lite XL](https://takase.top/lite-xl-docs/) into a proper IDE.
@@ -24,8 +28,6 @@ servers, linters and formatters have a correspondent arch package, either in the
 3. [Development Boards](#development-boards)
 4. [Language Support Status](#language-support-status)
 5. [LSP Bundle Support Status](#lsp-bundle-support-status)
-<!-- Titolo 1 e altre cose -->
-- [Titolo 1 e altre cose](#titolo-1-e-altre-cose)
 6. [Credits](#credits)
 
 ## Installation
