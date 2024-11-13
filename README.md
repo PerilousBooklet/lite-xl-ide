@@ -2,7 +2,7 @@
 
 > [!WARNING]
 > This repository is out-dated.
-> The information stored here has been moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
+> The information stored here will eventually be moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
 
 ## Introduction
 
