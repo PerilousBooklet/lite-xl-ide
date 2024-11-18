@@ -6,6 +6,9 @@ sudo pacman -Syu arduino-language-server
 # Assembly x86_64
 paru -S asm-lsp
 
+# AWK
+paru -S awk-language-server
+
 # Bash
 sudo pacman -Syu bash-language-server shellcheck
 
@@ -79,6 +82,9 @@ sudo pacman -Syu roswell
 
 # Lua
 paru -S lua-language-server-git
+
+# Markdown
+sudo pacman -Syu marksman
 
 # Nim
 paru -S choosenim-bin
