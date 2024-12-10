@@ -1,7 +1,7 @@
 # Lite XL IDE Setup
 
 > [!WARNING]
-> This repository is out-dated.
+> This repository may be outdated.
 > The information stored here will eventually be moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
 
 ## Introduction
