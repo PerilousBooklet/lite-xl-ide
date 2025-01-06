@@ -157,7 +157,7 @@ config.format_on_save = true
 | Lua | :check_mark: | :check_mark: | :check_mark: ex | :check_mark: | :check_mark: |  |  |
 | Nim | :check_mark: | :check_mark: \* | :check_mark: \* |  |  |  |  |
 | Nix | :check_mark: |  |  | :check_mark: |  |  |  |
-| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) |  |  | :check_mark: | :check_mark: |  |  |
+| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
 | Odin | :check_mark: | :check_mark: | :check_mark: |  |  |  |  |
 | OpenSCAD | :check_mark: |  |  |  |  |  |  |
 | Perl | :check_mark: | :check_mark: |  | :check_mark: |  |  |  |
