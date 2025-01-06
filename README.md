@@ -99,7 +99,7 @@ config.format_on_save = true
 - [x] Git integration (WIP)
 - [x] Builder integration (WIP)
 - [x] Debugger integration (WIP)
-- [x] Markdown support via [ghmarkdown](https://github.com/lite-xl/lite-xl-plugins/blob/master/plugins/ghmarkdown.lua) or [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
+- [x] Markdown support via [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
 
 ### WIP
 - [ ] Foldable code blocks
@@ -126,61 +126,58 @@ config.format_on_save = true
 
 ## Language support status
 
-<!-- check: <span>&#9989;</span> or 1004 -->
-<!-- x: <span>&#x274c;</span> or 1008 -->
-
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
-| Arduino | <span>&#9989;</span> |  |  |  |  |  |  |
-| Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
-| Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Arduino | :check_mark: |  |  |  |  |  |  |
+| Bash | :check_mark: | :check_mark: | :check_mark: ex | :check_mark: | :check_mark: |  |  |
+| C# | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |  |
+| C/C++ | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |:check_mark:|
+| Clojure | :check_mark: | :check_mark: | :check_mark: |  | :check_mark: |  |  |
 | Cobol |  |  |  |  |  |  |  |
-| Crystal | <span>&#9989;</span> | <span>&#9989;</span> \* |  |  | <span>&#9989;</span> |  |  |
-| CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
-| Dart | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
-| Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
-| Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
+| Crystal | :check_mark: | :check_mark: \* |  |  | :check_mark: |  |  |
+| CSS | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| D | :check_mark: | :check_mark: | :check_mark: |  | :check_mark: |  |  |
+| Dart | :check_mark: | :check_mark: | :check_mark: |  | :check_mark: |  |  |
+| Elixir | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| Elm | :check_mark: | :check_mark: | :check_mark: |  | :check_mark: |  |  |
+| Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | :check_mark: | :check_mark: \* | :check_mark: |  |  |  |
 | F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) |  |  |  |  |  |  |
-| Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
-| GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
-| Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
-| Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#x274c;</span>|  |  |  |
-| Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Fortran | :check_mark: | :check_mark: |  |  |  |  |  |
+| GDScript | :check_mark: |  |  |  | :check_mark: |  |  |
+| Go | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| Groovy | :check_mark: | :check_mark: \* | :check_mark: |  |  |  |  |
+| Haskell | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| HTML | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| Java | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
+| Javascript | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
+| JSON | :check_mark: | :check_mark: | :check_mark: |/|  |  |  |
+| Julia | :check_mark: | :check_mark: \* |  | :check_mark: | :check_mark: |  |  |
+| Kotlin | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |  |
 | Lisp |  |  |  |  |  |  |  |
-| Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
-| Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
-| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) |  |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
-| Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
-| PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
-| Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Ruby | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Lua | :check_mark: | :check_mark: | :check_mark: ex | :check_mark: | :check_mark: |  |  |
+| Nim | :check_mark: | :check_mark: \* | :check_mark: \* |  |  |  |  |
+| Nix | :check_mark: |  |  | :check_mark: |  |  |  |
+| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) |  |  | :check_mark: | :check_mark: |  |  |
+| Odin | :check_mark: | :check_mark: | :check_mark: |  |  |  |  |
+| OpenSCAD | :check_mark: |  |  |  |  |  |  |
+| Perl | :check_mark: | :check_mark: |  | :check_mark: |  |  |  |
+| PHP | :check_mark: | :check_mark: | :check_mark: ex | :check_mark: |  |  |  |
+| Python | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
+| R | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |  |
+| Ruby | :check_mark: | :check_mark: |  | :check_mark: | :check_mark: |  |  |
+| Rust | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
+| Scala | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |  |
+| SQL | :check_mark: | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |
 | System Verilog |  |  |  |  |  |  |  |
-| TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
-| Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
-| Typst | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
-| V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
-| Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
-| Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
-| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> |  |  |  |
-| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#x274c;</span> | <span>&#9989;</span> |  |  |
+| TeX | :check_mark: | :check_mark: | :check_mark: | :check_mark: |  |  |  |
+| TOML | :check_mark: | :check_mark: | :check_mark: | / | :check_mark: |  |  |
+| Typescript | :check_mark: | :check_mark: |  |  |  |  |  |
+| Typst | :check_mark: | :check_mark: \* | :check_mark: |  |  |  |  |
+| V | :check_mark: | :check_mark: |  |  | :check_mark: |  |  |
+| Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | :check_mark: \* | :check_mark: |  |  |  |  |
+| Zig | :check_mark: | :check_mark: | :check_mark: ex |  | :check_mark: |  |  |
+| XML | :check_mark: | :check_mark: | :check_mark: | / |  |  |  |
+| YAML | :check_mark: | :check_mark: | :check_mark: | / | :check_mark: |  |  |
 
 `*`: there are still some problems to solve
 
@@ -193,7 +190,7 @@ config.format_on_save = true
 | Arduino |  |  |  |
 | Bash |  |  |  |
 | C# |  |  |  |
-| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
+| C/C++ | :check_mark: | `lsp_c` | `ide_c` |
 | Clojure |   |  |  |
 | Crystal |  |  |  |
 | CSS |  |  |  |
@@ -205,13 +202,13 @@ config.format_on_save = true
 | Groovy |  |  |  |
 | Haskell |  |  |  |
 | HTML |  |  |  |
-| Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
-| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
-| JSON | <span>&#9989;</span> | `lsp_json` |  |
+| Java | :check_mark: | `lsp_java` | `ide_java` |
+| Javascript | :check_mark: | `lsp_typescript` | `ide_javascript` |
+| JSON | :check_mark: | `lsp_json` |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
 | Lisp |  |  |  |
-| Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
+| Lua | :check_mark: | `lsp_lua` | `ide_lua` |
 | Nim |  |  |  |
 | Nix |  |  |  |
 | Ocaml |  |  |  |
@@ -219,18 +216,18 @@ config.format_on_save = true
 | OpenSCAD |  |  |  |
 | Perl |  |  |  |
 | PHP |  |  |  |
-| Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
+| Python | :check_mark: | `lsp_python` | `ide_python` |
 | R |  |  |  |
 | Ruby |  |  |  |
-| Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
+| Rust | :check_mark: | `lsp_rust` | `ide_rust` |
 | Scala |  |  |  |
 | SQL |  |  |  |
-| TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
-| Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
+| TeX | :check_mark: | `lsp_tex` | `ide_tex` |
+| Typescript | :check_mark: | `lsp_typescript` |  |
 | Typst |  |  |  |
 | XML |  |  |  |
-| YAML | <span>&#9989;</span> | `lsp_yaml` |  |
-| Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
+| YAML | :check_mark: | `lsp_yaml` |  |
+| Zig | :check_mark: | `lsp_zig` | `ide_zig` |
 
 ## Credits
 
