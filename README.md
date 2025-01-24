@@ -126,11 +126,13 @@ config.format_on_save = true
 
 ## Language support status
 
-<!-- <span>&#9989;</span> <span>&#9989;</span> -->
+<!-- check mark: <span>&#9989;</span> -->
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
 | Arduino | <span>&#9989;</span> |  |  |  |  |  |  |
+| Assembly x86_64 | <span>&#9989;</span> |  |  |  |  |  |  |
+| Assembly RISC-V | <span>&#9989;</span> |  |  |  |  |  |  |
 | Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
