@@ -102,6 +102,7 @@ config.format_on_save = true
 - [x] Markdown support via [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
 
 ### WIP
+- [ ] Project template manager
 - [ ] Foldable code blocks
 - [ ] Horizontal scrolling for project treeview
 - [ ] Ligatures support
@@ -114,7 +115,6 @@ config.format_on_save = true
 - [ ] External libraries item in project treeview
 - [ ] Simultaneous tag rename
 - [ ] Project-wide refactoring
-- [ ] Project template manager
 
 ## Development Boards
 
