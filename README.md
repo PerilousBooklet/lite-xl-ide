@@ -4,7 +4,7 @@
 > The information stored here will eventually be moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
 
 > [!NOTE]
-> This project is WIP
+> This project is WIP.
 > Basic IDE functionality is ready only for C/C++ (refer to the [Language Section](#language-support-status) for information about your favourite language)
 
 ## Introduction
