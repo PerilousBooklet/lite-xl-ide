@@ -1,14 +1,15 @@
-# Lite XL IDE Setup
+# Lite XL IDE
 
 > [!WARNING]
-> This repository may be outdated.
 > The information stored here will eventually be moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
+
+> [!NOTE]
+> This project is WIP
+> Basic IDE functionality is ready only for C/C++ (refer to the [Language Section](#language-support-status) for information about your favourite language)
 
 ## Introduction
 
 Documentation for a set of plugins and configuration files that aims to turn [Lite XL](https://takase.top/lite-xl-docs/) into a proper IDE.
-
-(This project is still WIP.)
 
 This repository no longer contains an install script to setup Lite XL IDE.
 
