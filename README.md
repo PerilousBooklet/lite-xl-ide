@@ -86,7 +86,7 @@ config.format_on_save = true
 
 ## Features
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 50+ languages (WIP)
+- [x] Intellisense support for 50+ languages
 - [x] Custom project treeview devicons
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
@@ -95,27 +95,26 @@ config.format_on_save = true
 - [x] Single/multi-line commenting with shortcuts
 - [x] Go to line n command
 - [x] Todo treeview
-- [x] Code block definition preview on hover (like for TailwindCSS in VSCode)
+- [x] Code block definition preview on hover
 - [x] Integrated terminal
-- [x] Git integration (WIP)
-- [x] Builder integration (WIP)
-- [x] Debugger integration (WIP)
+- [x] Git integration
+- [x] Builder integration
+- [x] Debugger integration
 - [x] Markdown support via [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
 
 ### WIP
-- [ ] Project template manager
 - [ ] Foldable code blocks
 - [ ] Horizontal scrolling for project treeview
 - [ ] Ligatures support
+- [ ] Project template manager
+- [ ] Document symbols treeview
 - [ ] Github Copilot integration
-- [ ] Custom Canvas API to allow an external renderer to draw on a surface that Lite XL will render on screen
 
 ### TODO
-- [ ] Document symbols treeview
-- [ ] Support goto-definition/implementation for external libraries (es. java, minecraft mods)
+- [ ] Project-wide refactoring
 - [ ] External libraries item in project treeview
 - [ ] Simultaneous tag rename
-- [ ] Project-wide refactoring
+- [ ] Support goto-definition/implementation for external libraries (es. java, minecraft mods)
 
 ## Development Boards
 
@@ -204,7 +203,7 @@ config.format_on_save = true
 | Elixir |  |  |  |
 | ELM |  |  |  |
 | Erlang |  |  |  |
-| Go |  |  |  |
+| Go | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/61) | `lsp_go` |  |
 | Groovy |  |  |  |
 | Haskell |  |  |  |
 | HTML |  |  |  |
