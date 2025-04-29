@@ -196,7 +196,7 @@ config.format_on_save = true
 | Bash |  |  |  |
 | C# |  |  |  |
 | C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
-| Clojure |   |  |  |
+| Clojure | <span>&#9989;</span> | `lsp_clojure` |  |
 | Crystal |  |  |  |
 | CSS |  |  |  |
 | Dart |  |  |  |
