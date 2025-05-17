@@ -219,7 +219,7 @@ config.format_on_save = true
 | Fortran |  |  |  |
 | GDScript |  |  |  |
 | GLSL |  |  |  |
-| Go | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/61) | `lsp_go` |  |
+| Go | <span>&#9989;</span> | `lsp_go` |  |
 | Groovy |  |  |  |
 | Haskell |  |  |  |
 | HTML |  |  |  |
