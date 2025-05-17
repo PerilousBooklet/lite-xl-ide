@@ -86,20 +86,20 @@ config.format_on_save = true
 
 ## Features
 - [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 50+ languages
-- [x] Custom project treeview devicons
+- [x] Intellisense support for 40+ languages
+- [x] Custom project treeview icons
 - [x] VSCode-like minimap
 - [x] Project-wide text string search
 - [x] Project-wide filename search
 - [x] Multi-cursor editing
 - [x] Single/multi-line commenting with shortcuts
 - [x] Go to line n command
-- [x] Todo treeview
-- [x] Code block definition preview on hover
 - [x] Integrated terminal
 - [x] Git integration
 - [x] Builder integration
 - [x] Debugger integration
+- [x] Todo treeview
+- [x] Code block definition preview on hover
 - [x] Markdown support via [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
 
 ### WIP
@@ -112,7 +112,7 @@ config.format_on_save = true
 
 ### TODO
 - [ ] Project-wide refactoring
-- [ ] External libraries item in project treeview
+- [ ] External libraries reference in project treeview
 - [ ] Simultaneous tag rename
 - [ ] Support goto-definition/implementation for external libraries (es. java, minecraft mods)
 
@@ -130,14 +130,16 @@ config.format_on_save = true
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
-| Arduino | <span>&#9989;</span> |  |  |  |  |  |  |
-| Assembly x86_64 | <span>&#9989;</span> |  |  |  |  |  |  |
+| Arduino | <span>&#9989;</span> | WIP |  |  |  |  |  |
+| Assembly x86_64 | <span>&#9989;</span> | WIP |  |  |  |  |  |
 | Assembly RISC-V | <span>&#9989;</span> |  |  |  |  |  |  |
 | Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
 | Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Cmake | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Cobol |  |  |  |  |  |  |  |
+| Common Lisp |  |  |  |  |  |  |  |
 | Crystal | <span>&#9989;</span> | <span>&#9989;</span> \* |  |  | <span>&#9989;</span> |  |  |
 | CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
@@ -148,6 +150,7 @@ config.format_on_save = true
 | F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) |  |  |  |  |  |  |
 | Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
+| GLSL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
@@ -157,29 +160,32 @@ config.format_on_save = true
 | JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |/|  |  |  |
 | Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Lisp |  |  |  |  |  |  |  |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Meson | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
 | Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
+| Pascal |  |  |  |  |  |  |  |
 | Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
 | PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
-| PlantUML | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/509) |  |  |  |  |  |  |
+| PlantUML | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/509) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/148) |  |  |  |  |  |
 | Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Ruby | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Scheme | [WIP]() |  |  |  |  |  |  |
 | SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| System Verilog |  |  |  |  |  |  |  |
+| SystemVerilog |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/147) |  |  |  |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
 | Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
-| Typst | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Typst | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
 | Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Verilog |  |  |  |  |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
 | XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / |  |  |  |
 | YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
@@ -193,16 +199,26 @@ config.format_on_save = true
 | Language         | LSP Bundle | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
 | Arduino |  |  |  |
+| Assembly_x86_64 |  |  |  |
+| Assembly_RISC_V |  |  |  |
 | Bash |  |  |  |
 | C# |  |  |  |
 | C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
 | Clojure | <span>&#9989;</span> | `lsp_clojure` |  |
+| CMake |  |  |  |
+| Cobol |  |  |  |
+| Common Lisp |  |  |  |
 | Crystal |  |  |  |
 | CSS |  |  |  |
+| D | <span>&#9989;</span> | `lsp_d` |  |
 | Dart |  |  |  |
 | Elixir |  |  |  |
-| ELM |  |  |  |
+| Elm |  |  |  |
 | Erlang |  |  |  |
+| F# |  |  |  |
+| Fortran |  |  |  |
+| GDScript |  |  |  |
+| GLSL |  |  |  |
 | Go | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/61) | `lsp_go` |  |
 | Groovy |  |  |  |
 | Haskell |  |  |  |
@@ -212,27 +228,35 @@ config.format_on_save = true
 | JSON | <span>&#9989;</span> | `lsp_json` |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
-| Lisp |  |  |  |
 | Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
+| Meson |  |  |  |
 | Nim |  |  |  |
 | Nix |  |  |  |
 | Ocaml |  |  |  |
 | Odin |  |  |  |
 | OpenSCAD |  |  |  |
+| Pascal |  |  |  |
 | Perl |  |  |  |
 | PHP |  |  |  |
+| PlantUML |  |  |  |
 | Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
 | R |  |  |  |
 | Ruby |  |  |  |
 | Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
 | Scala |  |  |  |
+| Scheme |  |  |  |
 | SQL |  |  |  |
+| SystemVerilog |  |  |  |
 | TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
 | Typst |  |  |  |
+| V |  |  |  |
+| Vala |  |  |  |
+| Verilog |  |  |  |
+| XML |  |  |  |
+| Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
 | XML |  |  |  |
 | YAML | <span>&#9989;</span> | `lsp_yaml` |  |
-| Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
 
 ## Credits
 
@@ -247,4 +271,5 @@ config.format_on_save = true
 - https://github.com/adamharrison/lite-xl-terminal
 - https://github.com/drmargarido/TodoTreeView
 - https://github.com/jgmdev/lite-xl-threads
-- And many more...
+
+And many more...
