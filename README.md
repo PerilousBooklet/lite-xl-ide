@@ -225,7 +225,7 @@ config.format_on_save = true
 | Ruby |  |  |  |
 | Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
 | SQL |  |  |  |
-| XML |  |  | / |
+| XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  | / |
 | YAML | <span>&#9989;</span> | `lsp_yaml` | / |
 
 ### Nice-to-Have
