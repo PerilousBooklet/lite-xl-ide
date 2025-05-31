@@ -137,6 +137,7 @@ config.format_on_save = true
 | Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
+| CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
@@ -164,7 +165,6 @@ config.format_on_save = true
 | Cobol |  |  |  |  |  |  |  |
 | Common Lisp |  |  |  |  |  |  |  |
 | Crystal | <span>&#9989;</span> | <span>&#9989;</span> \* |  |  | <span>&#9989;</span> |  |  |
-| CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Dart | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
@@ -212,6 +212,7 @@ config.format_on_save = true
 | Bash |  |  |  |
 | C# |  |  |  |
 | C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
+| CSS |  |  | / |
 | Go | <span>&#9989;</span> | `lsp_go` |  |
 | HTML |  |  |  |
 | Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
@@ -239,7 +240,6 @@ config.format_on_save = true
 | Cobol |  |  |  |
 | Common Lisp |  |  |  |
 | Crystal |  |  |  |
-| CSS |  |  |  |
 | D | <span>&#9989;</span> | `lsp_d` |  |
 | Dart |  |  |  |
 | Elixir |  |  |  |
