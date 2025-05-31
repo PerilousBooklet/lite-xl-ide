@@ -208,7 +208,7 @@ config.format_on_save = true
 ### Must-Have
 
 | Language         | LSP Bundle | Reviewed | LSP Bundle Package | IDE Package |
-|------------------|:--------------:|:-------------:|:-------------:|
+|------------------|:--------------:|:--------------:|:-------------:|:-------------:|
 | Bash |  |  |  |  |
 | C# |  |  |  |  |
 | C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_c` | `ide_c` |
@@ -230,8 +230,8 @@ config.format_on_save = true
 
 ### Nice-to-Have
 
-| Language         | LSP Bundle | LSP Bundle Package | IDE Package |
-|------------------|:--------------:|:-------------:|:-------------:|
+| Language         | LSP Bundle | Reviewed | LSP Bundle Package | IDE Package |
+|------------------|:--------------:|:--------------:|:-------------:|:-------------:|
 | Arduino |  |  |  |  |
 | Assembly_x86_64 |  |  |  |  |
 | Assembly_RISC_V |  |  |  |  |
