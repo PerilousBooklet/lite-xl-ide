@@ -126,16 +126,39 @@ config.format_on_save = true
 
 ## Language support status
 
+<!-- TODO: add relative link to checkmark spans -->
+
 <!-- check mark: <span>&#9989;</span> -->
+
+### Must-Have
+
+| Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
+|------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
+| Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
+| Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |/|  |  |  |
+| Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
+| PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
+| Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Ruby | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / |  |  |  |
+| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
+
+### Nice-to-Have
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
 | Arduino | <span>&#9989;</span> | WIP |  |  |  |  |  |
 | Assembly x86_64 | <span>&#9989;</span> | WIP |  |  |  |  |  |
 | Assembly RISC-V | <span>&#9989;</span> |  |  |  |  |  |  |
-| Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
 | Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Cmake | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Cobol |  |  |  |  |  |  |  |
@@ -151,16 +174,10 @@ config.format_on_save = true
 | Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
 | GLSL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
-| Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |/|  |  |  |
 | Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Meson | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
@@ -168,16 +185,10 @@ config.format_on_save = true
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
 | Pascal |  |  |  |  |  |  |  |
-| Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
-| PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
 | PlantUML | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/509) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/148) |  |  |  |  |  |
-| Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Ruby | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Scheme | [WIP]() |  |  |  |  |  |  |
-| SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | SystemVerilog |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/147) |  |  |  |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
@@ -187,8 +198,6 @@ config.format_on_save = true
 | Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Verilog |  |  |  |  |  |  |  |
 | Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
-| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / |  |  |  |
-| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
 
@@ -196,16 +205,37 @@ config.format_on_save = true
 
 ## LSP bundle support status
 
+### Must-Have
+
+| Language         | LSP Bundle | LSP Bundle Package | IDE Package |
+|------------------|:--------------:|:-------------:|:-------------:|
+| Bash |  |  |  |
+| C# |  |  |  |
+| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
+| Go | <span>&#9989;</span> | `lsp_go` |  |
+| HTML |  |  |  |
+| Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
+| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
+| JSON | <span>&#9989;</span> | `lsp_json` | / |
+| Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
+| Perl |  |  |  |
+| PHP |  |  |  |
+| Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
+| Ruby |  |  |  |
+| Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
+| SQL |  |  |  |
+| XML |  |  | / |
+| YAML | <span>&#9989;</span> | `lsp_yaml` | / |
+
+### Nice-to-Have
+
 | Language         | LSP Bundle | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
 | Arduino |  |  |  |
 | Assembly_x86_64 |  |  |  |
 | Assembly_RISC_V |  |  |  |
-| Bash |  |  |  |
-| C# |  |  |  |
-| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
 | Clojure | <span>&#9989;</span> | `lsp_clojure` |  |
-| CMake |  |  |  |
+| CMake |  |  | / |
 | Cobol |  |  |  |
 | Common Lisp |  |  |  |
 | Crystal |  |  |  |
@@ -217,35 +247,23 @@ config.format_on_save = true
 | Erlang |  |  |  |
 | F# |  |  |  |
 | Fortran |  |  |  |
-| GDScript |  |  |  |
+| GDScript |  |  | / |
 | GLSL |  |  |  |
-| Go | <span>&#9989;</span> | `lsp_go` |  |
 | Groovy |  |  |  |
 | Haskell |  |  |  |
-| HTML |  |  |  |
-| Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
-| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
-| JSON | <span>&#9989;</span> | `lsp_json` |  |
 | Julia |  |  |  |
 | Kotlin |  |  |  |
-| Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
-| Meson |  |  |  |
+| Meson |  |  | / |
 | Nim |  |  |  |
 | Nix |  |  |  |
 | Ocaml |  |  |  |
 | Odin |  |  |  |
 | OpenSCAD |  |  |  |
 | Pascal |  |  |  |
-| Perl |  |  |  |
-| PHP |  |  |  |
 | PlantUML |  |  |  |
-| Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
 | R |  |  |  |
-| Ruby |  |  |  |
-| Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
 | Scala |  |  |  |
 | Scheme |  |  |  |
-| SQL |  |  |  |
 | SystemVerilog |  |  |  |
 | TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
 | Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
@@ -253,10 +271,7 @@ config.format_on_save = true
 | V |  |  |  |
 | Vala |  |  |  |
 | Verilog |  |  |  |
-| XML |  |  |  |
 | Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
-| XML |  |  |  |
-| YAML | <span>&#9989;</span> | `lsp_yaml` |  |
 
 ## Credits
 
