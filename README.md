@@ -207,71 +207,71 @@ config.format_on_save = true
 
 ### Must-Have
 
-| Language         | LSP Bundle | LSP Bundle Package | IDE Package |
+| Language         | LSP Bundle | Reviewed | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
-| Bash |  |  |  |
-| C# |  |  |  |
-| C/C++ | <span>&#9989;</span> | `lsp_c` | `ide_c` |
-| CSS |  |  | / |
-| Go | <span>&#9989;</span> | `lsp_go` |  |
-| HTML |  |  |  |
-| Java | <span>&#9989;</span> | `lsp_java` | `ide_java` |
-| Javascript | <span>&#9989;</span> | `lsp_typescript` | `ide_javascript` |
-| JSON | <span>&#9989;</span> | `lsp_json` | / |
-| Lua | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
-| Perl |  |  |  |
-| PHP |  |  |  |
-| Python | <span>&#9989;</span> | `lsp_python` | `ide_python` |
-| Ruby |  |  |  |
-| Rust | <span>&#9989;</span> | `lsp_rust` | `ide_rust` |
-| SQL |  |  |  |
-| XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  | / |
-| YAML | <span>&#9989;</span> | `lsp_yaml` | / |
+| Bash |  |  |  |  |
+| C# |  |  |  |  |
+| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_c` | `ide_c` |
+| CSS |  |  |  | / |
+| Go | <span>&#9989;</span> |  | `lsp_go` |  |
+| HTML |  |  |  |  |
+| Java | <span>&#9989;</span> |  | `lsp_java` | `ide_java` |
+| Javascript | <span>&#9989;</span> |  | `lsp_typescript` | `ide_javascript` |
+| JSON | <span>&#9989;</span> |  | `lsp_json` | / |
+| Lua | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
+| Perl |  |  |  |  |
+| PHP |  |  |  |  |
+| Python | <span>&#9989;</span> |  | `lsp_python` | `ide_python` |
+| Ruby |  |  |  |  |
+| Rust | <span>&#9989;</span> |  | `lsp_rust` | `ide_rust` |
+| SQL |  |  |  |  |
+| XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  |  | / |
+| YAML | <span>&#9989;</span> |  | `lsp_yaml` | / |
 
 ### Nice-to-Have
 
 | Language         | LSP Bundle | LSP Bundle Package | IDE Package |
 |------------------|:--------------:|:-------------:|:-------------:|
-| Arduino |  |  |  |
-| Assembly_x86_64 |  |  |  |
-| Assembly_RISC_V |  |  |  |
-| Clojure | <span>&#9989;</span> | `lsp_clojure` |  |
-| CMake |  |  | / |
-| Cobol |  |  |  |
-| Common Lisp |  |  |  |
-| Crystal |  |  |  |
-| D | <span>&#9989;</span> | `lsp_d` |  |
-| Dart |  |  |  |
-| Elixir |  |  |  |
-| Elm |  |  |  |
-| Erlang |  |  |  |
-| F# |  |  |  |
-| Fortran |  |  |  |
-| GDScript |  |  | / |
-| GLSL |  |  |  |
-| Groovy |  |  |  |
-| Haskell |  |  |  |
-| Julia |  |  |  |
-| Kotlin |  |  |  |
-| Meson |  |  | / |
-| Nim |  |  |  |
-| Nix |  |  |  |
-| Ocaml |  |  |  |
-| Odin |  |  |  |
-| OpenSCAD |  |  |  |
-| Pascal |  |  |  |
-| PlantUML |  |  |  |
-| R |  |  |  |
-| Scala |  |  |  |
-| Scheme |  |  |  |
-| SystemVerilog |  |  |  |
-| TeX | <span>&#9989;</span> | `lsp_tex` | `ide_tex` |
-| Typescript | <span>&#9989;</span> | `lsp_typescript` |  |
-| Typst |  |  |  |
-| V |  |  |  |
-| Vala |  |  |  |
-| Verilog |  |  |  |
-| Zig | <span>&#9989;</span> | `lsp_zig` | `ide_zig` |
+| Arduino |  |  |  |  |
+| Assembly_x86_64 |  |  |  |  |
+| Assembly_RISC_V |  |  |  |  |
+| Clojure | <span>&#9989;</span> |  | `lsp_clojure` |  |
+| CMake |  |  |  | / |
+| Cobol |  |  |  |  |
+| Common Lisp |  |  |  |  |
+| Crystal |  |  |  |  |
+| D | <span>&#9989;</span> |  | `lsp_d` |  |
+| Dart |  |  |  |  |
+| Elixir |  |  |  |  |
+| Elm |  |  |  |  |
+| Erlang |  |  |  |  |
+| F# |  |  |  |  |
+| Fortran |  |  |  |  |
+| GDScript |  |  |  | / |
+| GLSL |  |  |  |  |
+| Groovy |  |  |  |  |
+| Haskell |  |  |  |  |
+| Julia |  |  |  |  |  |
+| Kotlin |  |  |  |  |
+| Meson |  |  |  | / |
+| Nim |  |  |  |  |
+| Nix |  |  |  |  |
+| Ocaml |  |  |  |  |
+| Odin |  |  |  |  |
+| OpenSCAD |  |  |  |  |
+| Pascal |  |  |  |  |
+| PlantUML |  |  |  |  |
+| R |  |  |  |  |
+| Scala |  |  |  |  |
+| Scheme |  |  |  |  |
+| SystemVerilog |  |  |  |  |
+| TeX | <span>&#9989;</span> |  | `lsp_tex` | `ide_tex` |
+| Typescript | <span>&#9989;</span> |  | `lsp_typescript` |  |
+| Typst |  |  |  |  |
+| V |  |  |  |  |
+| Vala |  |  |  |  |
+| Verilog |  |  |  |  |
+| Zig | <span>&#9989;</span> |  | `lsp_zig` | `ide_zig` |
 
 ## Credits
 
