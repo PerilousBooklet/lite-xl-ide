@@ -128,78 +128,76 @@ config.format_on_save = true
 
 <!-- TODO: add relative link to checkmark spans -->
 
-<!-- check mark: <p style="color: #9acc76;">&#10004;</p> -->
-<p style="color: #9acc76;">&#10004;</p>
-<p style="color: #eb6772;">&#x2717;</p>
+<!-- check mark: <span>&#9989;</span> -->
 
 ### Must-Have
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
-| Bash | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> ex | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| C# | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| C/C++ | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |<p style="color: #9acc76;">&#10004;</p>|
-| CSS | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Go | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| HTML | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Java | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Javascript | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| JSON | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |/|  |  |  |
-| Lua | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> ex | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Perl | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| PHP | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> ex | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| Python | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Ruby | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Rust | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| SQL | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| XML | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | / |  |  |  |
-| YAML | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | / | <p style="color: #9acc76;">&#10004;</p> |  |  |
+| Bash | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| C# | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |<span>&#9989;</span>|
+| CSS | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Go | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| HTML | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Java | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Javascript | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| JSON | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |/|  |  |  |
+| Lua | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Perl | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |  |
+| PHP | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex | <span>&#9989;</span> |  |  |  |
+| Python | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Ruby | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Rust | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| SQL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| XML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / |  |  |  |
+| YAML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
 
 ### Nice-to-Have
 
 | Language | Syntax High. | LSP support | Linting | Snippets | Formatter | Builder | Debugger |
 |------------------|:--------------:|:-------------:|:---------:|:----------:|:----------:|:-----------:|:---------:|
-| Arduino | <p style="color: #9acc76;">&#10004;</p> | WIP |  |  |  |  |  |
-| Assembly x86_64 | <p style="color: #9acc76;">&#10004;</p> | WIP |  |  |  |  |  |
-| Assembly RISC-V | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |  |  |
-| Clojure | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Cmake | <p style="color: #9acc76;">&#10004;</p> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
+| Arduino | <span>&#9989;</span> | WIP |  |  |  |  |  |
+| Assembly x86_64 | <span>&#9989;</span> | WIP |  |  |  |  |  |
+| Assembly RISC-V | <span>&#9989;</span> |  |  |  |  |  |  |
+| Clojure | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Cmake | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Cobol |  |  |  |  |  |  |  |
 | Common Lisp |  |  |  |  |  |  |  |
-| Crystal | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> \* |  |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| D | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Dart | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Elixir | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Elm | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> \* | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
+| Crystal | <span>&#9989;</span> | <span>&#9989;</span> \* |  |  | <span>&#9989;</span> |  |  |
+| D | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Dart | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
+| Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
 | F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) |  |  |  |  |  |  |
-| Fortran | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |  |
-| GDScript | <p style="color: #9acc76;">&#10004;</p> |  |  |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| GLSL | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |
-| Groovy | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> \* | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |
-| Haskell | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Julia | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> \* |  | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Kotlin | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| Meson | <p style="color: #9acc76;">&#10004;</p> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
-| Nim | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> \* | <p style="color: #9acc76;">&#10004;</p> \* |  |  |  |  |
-| Nix | <p style="color: #9acc76;">&#10004;</p> |  |  | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Odin | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |
-| OpenSCAD | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |  |  |
+| Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
+| GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
+| GLSL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
+| Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Meson | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
+| Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
+| Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
+| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
 | Pascal |  |  |  |  |  |  |  |
 | PlantUML | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/509) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/148) |  |  |  |  |  |
-| R | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| Scala | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
+| R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Scheme | [WIP]() |  |  |  |  |  |  |
 | SystemVerilog |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/147) |  |  |  |  |  |
-| TeX | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |
-| TOML | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | / | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Typescript | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |  |
-| Typst | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |
-| V | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> |  |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
-| Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <p style="color: #9acc76;">&#10004;</p> \* | <p style="color: #9acc76;">&#10004;</p> |  |  |  |  |
+| TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
+| TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
+| Typescript | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
+| Typst | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
+| V | <span>&#9989;</span> | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |
+| Vala | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/432) | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Verilog |  |  |  |  |  |  |  |
-| Zig | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> ex |  | <p style="color: #9acc76;">&#10004;</p> |  |  |
+| Zig | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> ex |  | <span>&#9989;</span> |  |  |
 
 `*`: there are still some problems to solve
 
@@ -213,22 +211,22 @@ config.format_on_save = true
 |------------------|:--------------:|:--------------:|:-------------:|:-------------:|
 | Bash |  |  |  |  |
 | C# |  |  |  |  |
-| C/C++ | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | `lsp_c` | `ide_c` |
+| C/C++ | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_c` | `ide_c` |
 | CSS |  |  |  | / |
-| Go | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_go` |  |
+| Go | <span>&#9989;</span> |  | `lsp_go` |  |
 | HTML |  |  |  |  |
-| Java | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_java` | `ide_java` |
-| Javascript | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_typescript` | `ide_javascript` |
-| JSON | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_json` | / |
-| Lua | <p style="color: #9acc76;">&#10004;</p> | <p style="color: #9acc76;">&#10004;</p> | `lsp_lua` | `ide_lua` |
+| Java | <span>&#9989;</span> |  | `lsp_java` | `ide_java` |
+| Javascript | <span>&#9989;</span> |  | `lsp_typescript` | `ide_javascript` |
+| JSON | <span>&#9989;</span> |  | `lsp_json` | / |
+| Lua | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
 | Perl |  |  |  |  |
 | PHP |  |  |  |  |
-| Python | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_python` | `ide_python` |
+| Python | <span>&#9989;</span> |  | `lsp_python` | `ide_python` |
 | Ruby |  |  |  |  |
-| Rust | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_rust` | `ide_rust` |
+| Rust | <span>&#9989;</span> |  | `lsp_rust` | `ide_rust` |
 | SQL |  |  |  |  |
 | XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  |  | / |
-| YAML | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_yaml` | / |
+| YAML | <span>&#9989;</span> |  | `lsp_yaml` | / |
 
 ### Nice-to-Have
 
@@ -237,12 +235,12 @@ config.format_on_save = true
 | Arduino |  |  |  |  |
 | Assembly_x86_64 |  |  |  |  |
 | Assembly_RISC_V |  |  |  |  |
-| Clojure | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_clojure` |  |
+| Clojure | <span>&#9989;</span> |  | `lsp_clojure` |  |
 | CMake |  |  |  | / |
 | Cobol |  |  |  |  |
 | Common Lisp |  |  |  |  |
 | Crystal |  |  |  |  |
-| D | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_d` |  |
+| D | <span>&#9989;</span> |  | `lsp_d` |  |
 | Dart |  |  |  |  |
 | Elixir |  |  |  |  |
 | Elm |  |  |  |  |
@@ -267,13 +265,13 @@ config.format_on_save = true
 | Scala |  |  |  |  |
 | Scheme |  |  |  |  |
 | SystemVerilog |  |  |  |  |
-| TeX | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_tex` | `ide_tex` |
-| Typescript | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_typescript` |  |
+| TeX | <span>&#9989;</span> |  | `lsp_tex` | `ide_tex` |
+| Typescript | <span>&#9989;</span> |  | `lsp_typescript` |  |
 | Typst |  |  |  |  |
 | V |  |  |  |  |
 | Vala |  |  |  |  |
 | Verilog |  |  |  |  |
-| Zig | <p style="color: #9acc76;">&#10004;</p> |  | `lsp_zig` | `ide_zig` |
+| Zig | <span>&#9989;</span> |  | `lsp_zig` | `ide_zig` |
 
 ## Credits
 
