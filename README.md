@@ -3,7 +3,7 @@
 > [!NOTE]
 > The information stored here will eventually be moved to the [new website](https://takase.top/lite-xl-docs/user-guide/introduction/)
 
-This repository contains development information about plugins and configurations that aims to turn 
+This repository contains development information about plugins and configurations that aim to turn 
 [Lite XL](https://takase.top/lite-xl-docs/) into a powerful but still minimal IDE.
 
 If you want to know the development status of the IDE configuration for yoiur favourite programming language, look at the 
