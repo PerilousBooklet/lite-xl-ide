@@ -1,0 +1,99 @@
+- [ ] WIP: FIX: update language_java, language_kotlin, language_groovy
+- [ ] WIP: Replace "..." with [[...]] in all syntax plugins for regex patterns |~|https://github.com/lite-xl/lite-xl-plugins#512
+
+- [ ] WIP: Add lsp_xml
+- [ ] WIP: Add lsp support for meson and cmake
+- [ ] WIP: Add language_manpage
+- [ ] WIP: Add plantuml lsp
+- [ ] WIP: Add systemverilog LSP server
+- [ ] WIP: Add scheme lsp server https://github.com/PerilousBooklet/lite-xl-ide/issues/1
+- [ ] WIP: Add language_plantuml
+- [ ] WIP: Add language_erlang
+- [ ] WIP: Add language_ocaml
+- [ ] WIP: Add language_fsharp
+
+
+- [ ] TODO: UPDATE: check that all file extensions are coherent between:
+      - icons
+      - syntax
+      - lsp
+      - linter
+      - snippets
+      - formatter
+- [ ] TODO: lsp: look into how jdtls can access external libraries
+- [ ] TODO: Add class name reference and generic class name reference to language_kotlin
+- [ ] TODO: ISSUE: lsp_emmet conflicts with css lsp when autocompleting
+- [ ] TODO: LSP: Add java methods auto-import for classes/interfaces/enums
+- [ ] TODO: LSP: Add edit-after and multiple-edits
+- [ ] TODO: LSP: Doc views should exist at doc level
+- [ ] TODO: LSP: doc views should not be scroll-bound by doc height
+- [ ] TODO: FORMATTER: config.format_on_save should be config.plugins.formatter.format_on_save
+- [ ] TODO: FORMATTER: Add the functionality for code-insert-into-file
+- [ ] TODO: FORMATTER: update formatter run calls (os.exec() -> process.start())
+- [ ] TODO: SNIPPETS: fix snippets auto-suggest and lsp autocomplete menus overlapping each other
+- [ ] TODO: lsp: doesn't render /br in the hover docs
+- [ ] TODO: lsp: make sure the list menu for import paths always shows up when hovering above class reference (es. Java)
+- [ ] TODO: Add language_asciidoc
+- [ ] TODO: Add html linter
+- [ ] TODO: Add css linter
+- [ ] TODO: Add ts linter
+- [ ] TODO: Add go linter
+- [ ] TODO: Add haskell linter
+- [ ] TODO: Add ruby linter
+- [ ] TODO: Add perl linter
+- [ ] TODO: Add fortran linter
+- [ ] TODO: Add julia linter
+- [ ] TODO: Add fsharp linter
+- [ ] TODO: Add openscad linter
+- [ ] TODO: Add lisp lsp server
+- [ ] TODO: Add lisp linter
+- [ ] TODO: Add cobol lsp server
+- [ ] TODO: Add cobol linter
+- [ ] TODO: Add erlang formatter
+- [ ] TODO: Add fsharp formatter
+- [ ] TODO: Add fortran formatter
+- [ ] TODO: Add kotlin formatter
+- [ ] TODO: Add odin formatter
+- [ ] TODO: Add openscad formatter
+- [ ] TODO: Add perl formatter
+- [ ] TODO: Add php formatter
+- [ ] TODO: Add r formatter
+- [ ] TODO: Add latex formatter
+- [ ] TODO: Add ts formatter
+- [ ] TODO: Add typst formatter
+- [ ] TODO: Add lisp formatter
+- [ ] TODO: Add cobol formatter
+- [ ] TODO: Add nix formatter
+- [ ] TODO: Add asciidoc lsp server
+- [ ] TODO: Add language_autohotkey_v2
+- [ ] TODO: Add xml formatter
+- [ ] TODO: Add groovy formatter
+- [ ] TODO: Add nim formatter
+- [ ] TODO: Add pascal lsp server
+- [ ] TODO: Add systemverilog linter
+- [ ] TODO: Add verilog syntax
+- [ ] TODO: Add pascal syntax
+
+- [ ] TODO: Java
+- [ ] TODO: Nim
+- [ ] TODO: Crystal
+- [ ] TODO: Julia
+- [ ] TODO: Erlang
+- [ ] TODO: Elixir
+- [ ] TODO: R
+- [ ] TODO: D
+- [ ] TODO: Perl
+
+
+- [x] FORMATTER: rework data storage (convert to the system used by snippets)
+- [x] LSP entry review: Ruby
+- [x] Add glsl lsp
+- [x] LSP: Update zls status to Works
+- [x] LSP: Update zls status to Works
+- [x] FIX: language_st
+- [x] LSP: standardize (when possible) LSP servers install instructions in the config.lua
+- [x] Review all my syntax plugins for regex REDOs vulnerabilities.
+- [x] language_groovy: update constants pattern
+- [x] language_kotlin: update constants pattern
+- [x] FIX: Groovy description field in the lite-xl-plugins manifest
+- [x] Finish the csharpier PR
