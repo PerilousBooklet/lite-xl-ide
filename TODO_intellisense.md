@@ -1,3 +1,5 @@
+## WIP
+
 - [ ] WIP: FIX: update language_java, language_kotlin, language_groovy
 - [ ] WIP: Replace "..." with [[...]] in all syntax plugins for regex patterns |~|https://github.com/lite-xl/lite-xl-plugins#512
 
@@ -12,6 +14,7 @@
 - [ ] WIP: Add language_ocaml
 - [ ] WIP: Add language_fsharp
 
+## TODO
 
 - [ ] TODO: UPDATE: check that all file extensions are coherent between:
       - icons
@@ -84,6 +87,7 @@
 - [ ] TODO: D
 - [ ] TODO: Perl
 
+## DONE
 
 - [x] FORMATTER: rework data storage (convert to the system used by snippets)
 - [x] LSP entry review: Ruby

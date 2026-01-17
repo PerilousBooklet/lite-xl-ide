@@ -1,8 +1,11 @@
+## WIP
+
 - [ ] WIP: Add boilerplate plugin
 - [ ] WIP: Add doc-symbols treeview plugin
 - [ ] WIP: Add plugin for project-wide refactoring
 - [ ] WIP: Add plugin for visualizing external libraries folders and files inside of the project treeview (see Eclipse/Intellij)
 
+## TODO
 
 - [ ] TODO: Fix auto-rename tag (HTML, XML, latex, ...)
 - [ ] FIX: sticky_scroll and lint+ conflict on drawing the diagnostics line
@@ -34,3 +37,7 @@ NOTE: use intellij idea ultimate edition and vscode + extensions as inspiration/
 - [ ] TODO: Add kanban board plugin
 - [ ] TODO: Add uml editor plugin
       (study how the `equationgrapher` plugin works)
+
+## DONE
+
+

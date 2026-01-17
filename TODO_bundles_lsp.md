@@ -1,3 +1,9 @@
+## WIP
+
+
+
+## TODO
+
 - [ ] TODO: Fix bug with lsp_java about non-project files
 - [ ] TODO: Add lsp_kotlin
 - [ ] TODO: Add lsp_sql
@@ -31,3 +37,7 @@
 - [ ] TODO: Add lsp_ruby
 - [ ] TODO: Add lsp_scala
 - [ ] TODO: Add lsp_typst
+
+## DONE
+
+
