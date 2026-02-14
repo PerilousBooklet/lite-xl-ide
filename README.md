@@ -201,13 +201,10 @@ config.format_on_save = true
 | Javascript | <span>&#9989;</span> |  | `lsp_typescript` | `ide_javascript` |
 | JSON | <span>&#9989;</span> |  | `lsp_json` | / |
 | Lua | <span>&#9989;</span> | <span>&#9989;</span> | `lsp_lua` | `ide_lua` |
-| Perl |  |  |  |  |
 | PHP |  |  |  |  |
 | Python | <span>&#9989;</span> |  | `lsp_python` | `ide_python` |
-| Ruby |  |  |  |  |
 | Rust | <span>&#9989;</span> |  | `lsp_rust` | `ide_rust` |
 | SQL |  |  |  |  |
-| XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  |  | / |
 | YAML | <span>&#9989;</span> |  | `lsp_yaml` | / |
 
 ### Nice-to-Have
@@ -242,8 +239,10 @@ config.format_on_save = true
 | Odin |  |  |  |  |
 | OpenSCAD |  |  |  |  |
 | Pascal |  |  |  |  |
+| Perl |  |  |  |  |
 | PlantUML |  |  |  |  |
 | R |  |  |  |  |
+| Ruby |  |  |  |  |
 | Scala |  |  |  |  |
 | Scheme |  |  |  |  |
 | SystemVerilog |  |  |  |  |
@@ -254,6 +253,7 @@ config.format_on_save = true
 | Vala |  |  |  |  |
 | Verilog |  |  |  |  |
 | Zig | <span>&#9989;</span> |  | `lsp_zig` | `ide_zig` |
+| XML | [WIP](https://github.com/lite-xl/lite-xl-lsp-servers/pull/64) |  |  | / |
 
 ## Credits
 
