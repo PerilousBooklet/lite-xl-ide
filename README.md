@@ -152,25 +152,25 @@ config.format_on_save = true
 | Elixir | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Elm | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> |  |  |
 | Erlang | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/424) | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |
-| F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) |  |  |  |  |  |  |
+| F# | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/423) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/177) |  |  |  |  |  |
 | Fortran | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |  |
 | GDScript | <span>&#9989;</span> |  |  |  | <span>&#9989;</span> |  |  |
 | GLSL | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | Groovy | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> |  |  |  |  |
 | Haskell | <span>&#9989;</span> | <span>&#9989;</span> |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
-| Julia | <span>&#9989;</span> | <span>&#9989;</span> \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Julia | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/107) \* |  | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Kotlin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Meson | <span>&#9989;</span> | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/145) |  |  |  |  |  |
 | Nim | <span>&#9989;</span> | <span>&#9989;</span> \* | <span>&#9989;</span> \* |  |  |  |  |
 | Nix | <span>&#9989;</span> |  |  | <span>&#9989;</span> |  |  |  |
-| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
+| Ocaml | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/429) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/165) | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |
 | Odin | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |  |
 | OpenSCAD | <span>&#9989;</span> |  |  |  |  |  |  |
 | Pascal |  |  |  |  |  |  |  |
 | PlantUML | [WIP](https://github.com/lite-xl/lite-xl-plugins/pull/509) | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/148) |  |  |  |  |  |
 | R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
-| Scheme | [WIP]() |  |  |  |  |  |  |
+| Scheme |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/149) |  |  |  |  |  |
 | SystemVerilog |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/147) |  |  |  |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
