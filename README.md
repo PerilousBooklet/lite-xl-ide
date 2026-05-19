@@ -21,90 +21,37 @@ If you want to know the development status of the IDE configuration for yoiur fa
 
 Read the [official guide](https://lite-xl.com/user-guide/ide-setup/) for an introduction to the intended IDE-like setup.
 
-You can also take a look at the following quality-of-life plugins:
-
-- `extend_selection_line` (extends the selection line to the full width of the DocView)
-- `sort` (allows selecting text and sorting its lines alphabetically)
-- `titleize` (allows selecting a string and changing to upper case the initial of each word)
-- `markers` (allows placing line markers to which you can come back to sequentially by pressing a button, like for the results of a search)
-
-### Manual Configuration Steps
-
-Enable automatic linting upon opening and saving a file by adding the following code inside of `USERDIR/init.lua`:
-
-```lua
-local lintplus = require "plugins.lintplus"
-lintplus.setup.lint_on_doc_load()  -- enable automatic linting upon opening a file
-lintplus.setup.lint_on_doc_save()  -- enable automatic linting upon saving a file
-```
-
-Add code snippets by downloading the JSON files into a `USERDIR/plugins/snippets/json` folder and 
-then writing the following code inside of `USERDIR/init.lua`:
-
-```lua
-local lsp_snippets = require "plugins.lsp_snippets"
-lsp_snippets.add_paths {'plugins/snippets/json'}
-```
-
-You can also write your own snippets (in the folder `USERDIR/plugins/snippets/lua`) with 
-[the format of the `snippets` plugin](https://github.com/vqns/lite-xl-snippets?tab=readme-ov-file#usage) and load them with 
-the following code (paste it into `USERDIR/init.lua`): 
-
-```lua
-local snippet_files_list = system.list_dir(USERDIR .. "/plugins/snippets/lua")
-local snippet_modules_list = {}
-local temp_string = ""
-for k, v in pairs(snippet_files_list) do
-  if string.find(v, ".lua") then
-    temp_string = string.gsub(snippet_files_list[k], ".lua", "")
-    table.insert(snippet_modules_list, temp_string)
-  end
-end
-for k, v in pairs(snippet_modules_list) do
-  require("plugins.snippets.lua." .. v)
-end
-```
-
-Allow `format-on-save` by adding the following code to the `init.lua`:
-
-```lua
-config.format_on_save = true
-```
-
 ## Features
 
-- [x] Syntax highlighting for 100+ languages
-- [x] Intellisense support for 40+ languages
-- [x] Custom project treeview icons
-- [x] VSCode-like minimap
-- [x] Project-wide text string search
-- [x] Project-wide filename search
-- [x] Multi-cursor editing
-- [x] Single and multi-line commenting with shortcuts
-- [x] Go-to-line-n command
-- [x] Integrated terminal
-- [x] Git integration
-- [x] Builder integration
-- [x] Debugger integration
-- [x] Todo treeview
-- [x] Code block definition preview on hover
-- [x] Markdown support via [mdpreview](https://github.com/Not-a-web-Developer/lite-xl-mdpreview)
-- [x] Project template manager
+- Syntax highlighting for 100+ languages
+- Intellisense support for 40+ languages
+- VSCode-like minimap
+- Custom project treeview icons
+- Project-wide text string search
+- Project-wide filename search
+- Multi-cursor editing
+- Single and multi-line commenting with shortcuts
+- Go-to-line-n command
+- Integrated terminal
+- Git integration
+- Builder integration
+- Debugger integration
+- Todo treeview
+- Code block definition preview on hover
+- Project template manager
 
 ### WIP
 
-- [ ] Foldable code blocks
-- [ ] Ligatures support
-- [ ] Document symbols treeview
+- Foldable code blocks
+- Ligatures support
+- Document symbols treeview
 
 ### TODO
 
-- [ ] Project-wide refactoring
-- [ ] External libraries reference in project treeview
-- [ ] Simultaneous tag rename
-- [ ] Code mapper
-- [ ] Database reader (with ER diagram viewer)
-- [ ] HTTP client (to test APIs)
+- Project-wide refactoring
+- External libraries reference in project treeview
+- Simultaneous tag rename
+- Boilerplate utility
 
 ## Language support status
 
@@ -171,6 +118,7 @@ config.format_on_save = true
 | R | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Scala | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | Scheme |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/149) |  |  |  |  |  |
+| Smalltalk |  |  |  |  |  |  |  |
 | SystemVerilog |  | [WIP](https://github.com/lite-xl/lite-xl-lsp/pull/147) |  |  |  |  |  |
 | TeX | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> |  |  |  |
 | TOML | <span>&#9989;</span> | <span>&#9989;</span> | <span>&#9989;</span> | / | <span>&#9989;</span> |  |  |
